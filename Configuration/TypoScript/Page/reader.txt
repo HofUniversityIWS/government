@@ -1,0 +1,71 @@
+reader < page
+reader.typeNum = 1
+
+# Clean everything in the markup, except the content column
+reader.10 {
+  template {
+    elements {
+      HEADER.all = 1
+      HEADER.all {
+        subpartMarker = PARTIAL_HEADER
+        includeWrappingTag = 1
+      }
+      FOOTER.all = 1
+      FOOTER.all {
+        subpartMarker = PARTIAL_FOOTER
+        includeWrappingTag = 1
+      }
+
+      # Configure which HTML-tags should be made replacable by subparts
+      NAV.id.nav-top.includeWrappingTag = 1
+      NAV.id.nav-help.includeWrappingTag = 1
+      DIV.id.search.includeWrappingTag = 1
+      DIV.id.title.includeWrappingTag = 1
+      DIV.id.logo.includeWrappingTag = 1
+      DIV.id.logo.includeWrappingTag = 1
+      DIV.id.breadcrumb.includeWrappingTag = 1
+      NAV.id.nav-main.includeWrappingTag = 1
+
+      DIV.id.content-left = 1
+      DIV.id.content-left.includeWrappingTag = 1
+      DIV.id.content-left-output.includeWrappingTag = 1
+      DIV.id.content-right.includeWrappingTag = 1
+
+      NAV.id.nav-footer.includeWrappingTag = 1
+      DIV.id.footer-logo.includeWrappingTag = 1
+      DIV.id.copyright.includeWrappingTag = 1
+    }
+  }
+  subparts {
+    nav-top >
+    nav-top =
+    nav-help >
+    nav-help =
+    nav-main >
+    nav-main =
+    breadcrumb >
+    breadcrumb =
+    title >
+    title =
+    logo >
+    logo =
+    search >
+    search =
+    nav-footer >
+    nav-footer =
+    footer-logo >
+    footer-logo =
+    copyright >
+    copyright =
+    content-left >
+    content-left =
+    content-left-output >
+    content-left-output =
+    content-right >
+    content-right =
+    footer >
+    footer =
+    PARTIAL_HEADER =
+    PARTIAL_FOOTER =
+  }
+}

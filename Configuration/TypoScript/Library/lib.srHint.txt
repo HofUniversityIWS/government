@@ -1,0 +1,5 @@
+lib.srHint = TEXT
+lib.srHint {
+  required = 1
+  wrap = <h2 class="sr-hint">|</h2>
+}

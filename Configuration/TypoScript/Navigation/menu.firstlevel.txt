@@ -1,0 +1,14 @@
+# Start with copying our default menu configuration so we don't have to repeat our selves (except in the explanation, didn't I already mention this?) ;-)
+menu.firstlevel < menu.defaults
+menu.firstlevel {
+    # Since this is the top-level menu, we start this menu at the root level of the website
+    entryLevel = 0
+
+    # Always unfold all sub-levels of the menu
+    expAll = 0
+
+    # Copy the configuration of the first level of this menu to level 2 and 3
+    2 < .1
+    3 < .1
+    stdWrap.prepend.data = LLL:{$filepaths.l10n}:nav_main
+}

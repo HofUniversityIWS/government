@@ -1,0 +1,37 @@
+# put the inclusions in the footer
+page.includeJSlibs.jquery >
+page.includeJS.lightbox >
+page.includeJS.lightboxMain >
+
+page.includeJSFooterlibs.jquery = EXT:jquerycolorbox/res/js/jquery.js
+page.includeJSFooter.lightbox = EXT:jquerycolorbox/res/js/jquery.colorbox-min.js
+page.includeJSFooter.lightboxMain = EXT:jquerycolorbox/res/js/main.js
+
+# add the title tag and the necessary classes to the anchor
+tt_content.image.20.1.imageLinkWrap {
+  JSwindow = 0
+  directImageLink = 1
+  titleInLinkAndImg = 1
+  linkParams.ATagParams.dataWrap = class="lightbox" rel="lightbox{field:uid}" title="{field:titleText}"
+}
+
+# add the title tag and the necessary classes to the anchor for "click-enlarge"
+plugin.tt_news.displaySingle.image.imageLinkWrap {
+  JSwindow = 0
+  directImageLink = 1
+  titleInLinkAndImg = 1
+  linkParams.ATagParams.dataWrap = class="lightbox" rel="lightbox{field:uid}"
+  linkParams.ATagParams.append = TEXT
+  linkParams.ATagParams.append {
+    field = imagetitletext
+    stripHtml = 1
+    split.token.char = 10
+    split.token.if.isTrue = {$styles.content.imgtext.imageTextSplit}
+    split.returnKey.data = register : IMAGE_NUM_CURRENT
+    required = 1
+    noTrimWrap = | title="|" |
+  }
+
+  height =
+  width =
+}

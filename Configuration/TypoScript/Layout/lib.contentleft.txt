@@ -1,0 +1,14 @@
+lib.contentleft = COA
+
+# Insert the content from the left column into lib.contentleft
+lib.contentleft {
+    20 = CONTENT
+    20 {
+        table = tt_content
+        select.orderBy = sorting
+        select.where = colPos = 2
+        select.languageField = sys_language_uid
+
+        renderObj.stdWrap.dataWrap = <div id="c{field:uid}">|</div>
+    }
+}

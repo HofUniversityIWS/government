@@ -1,0 +1,5 @@
+# Only required for the "old" form element, not use for the new form wizard
+tt_content.mailform.20.RADIO.layout = <div class="csc-mailform-field">###LABEL### ###FIELD###</div>
+tt_content.mailform.20.radioWrap.accessibilityWrap = <fieldset###RADIO_FIELD_ID### class="csc-mailform-radio"><legend>###RADIO_GROUP_LABEL###</legend>|</fieldset>
+# Make some modifications to the rendering of the standard MAIL form records
+tt_content.mailform.20.accessibility = 1

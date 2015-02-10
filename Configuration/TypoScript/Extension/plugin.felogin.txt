@@ -1,0 +1,62 @@
+plugin.tx_felogin_pi1 {
+	# Use our own HTML template from the fileadmin directory
+	# so we can freely modify it without changing the extension
+	templateFile = {$filepaths.extensiontemplates}felogin/tx_felogin_pi1_template.html
+
+	# Clear default CSS additions - we take care of that in our own CSS files
+	_CSS_DEFAULT_STYLE =
+
+	welcomeHeader_stdWrap {
+		wrap = <h3>|</h3>
+	}
+	welcomeMessage_stdWrap {
+		wrap = <div>|</div>
+	}
+
+	successHeader_stdWrap {
+		wrap = <h4>|</h4>
+	}
+	successMessage_stdWrap {
+		wrap = <div class="felogin-message">|</div>
+	}
+
+	logoutHeader_stdWrap {
+		wrap = <h4>|</h4>
+	}
+	logoutMessage_stdWrap {
+		wrap = <div class="felogin-message">|</div>
+	}
+
+	errorHeader_stdWrap {
+		wrap = <h3>|</h3>
+	}
+	errorMessage_stdWrap {
+		wrap = <div>|</div>
+	}
+
+	forgotHeader_stdWrap {
+		wrap = <h3>|</h3>
+	}
+	forgotMessage_stdWrap {
+		wrap = <div>|</div>
+	}
+
+	changePasswordHeader_stdWrap {
+		wrap = <h3>|</h3>
+	}
+	changePasswordMessage_stdWrap {
+		wrap = <div>|</div>
+	}
+
+	cookieWarning_stdWrap {
+		wrap = <p style="color:red; font-weight:bold;">|</p>
+	}
+
+	# stdWrap for fe_users fields used in Messages
+	userfields {
+		username {
+			htmlSpecialChars = 1
+			wrap = <strong>|</strong>
+		}
+	}
+}

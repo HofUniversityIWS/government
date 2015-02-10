@@ -1,0 +1,74 @@
+# Make the PAGE object
+page = PAGE
+page {
+  # Regular pages always have typeNum = 0
+  typeNum = 0
+
+  # Add the icon that will appear in front of the url in the browser
+  # This icon will also be used for the bookmark menu in browsers
+  shortcutIcon = {$filepaths.templates}favicon.gif
+
+  ##Backend grid view defines body class for css
+  bodyTagCObject = CASE
+  bodyTagCObject {
+    key.field = backend_layout
+    key.ifEmpty.data = levelfield:-2, backend_layout_next_level, slide
+
+    # Define the default value
+    default = TEXT
+    default.value = <body>
+
+    # Copy the default value to 0
+    0 < .default
+
+    # Add different values for cases 1, 2 and 3
+    1 = TEXT
+    1.wrap = <body id="|">
+    1.value = three-columns
+
+    2 < .1
+    2.value = two-columns
+
+  }
+
+  # Add a TEMPLATE object to the page
+  # We use the template autoparser extension to easily replace parts of the HTML template by dynamic TypoScript objects
+  10 = TEMPLATE
+  10 {
+    # Use the HTML template from the automake template plugin
+    template =< plugin.tx_automaketemplate_pi1
+
+    # Use the <body> subpart
+    workOnSubpart = DOCUMENT_BODY
+
+    # Link content and page blocks to id's that have been enabled in the
+    # automaketemplate template in the extension_configuration sysfolder
+    subparts {
+      # Insert menu's from lib-objects into the appropriate subparts
+      nav-top < menu.top
+      nav-help < menu.help
+      nav-main < menu.firstlevel
+      breadcrumb < menu.breadcrumb
+
+      #language < menu.language
+
+      # Insert various TypoScript lib objects into the appropriate subparts of the template
+      title < lib.title
+      logo < lib.logo
+      search < lib.searchbox
+      nav-footer < menu.footer
+      footer-logo < lib.footer-logo
+      copyright < lib.copyright
+
+      # Insert content as already constructed in TypoScript objects into subparts
+      content-left-output < lib.contentleft
+      content-column < lib.content
+      content-right < lib.contentright
+
+    }
+  }
+}
+
+[globalVar = TSFE:id = 1]
+  page.bodyTag = <body id="start">
+[end]

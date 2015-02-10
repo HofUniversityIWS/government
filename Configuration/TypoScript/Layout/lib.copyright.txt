@@ -1,0 +1,30 @@
+# The method used here to fetch a record from a page or folder is slightly different from the one used
+# to fetch the loginbox in lib.contentleft
+# The method here doesn't refer to a specific record but takes the first record from the folder. This
+# has the advantage that an editor can delete the record and just create a new one, and it still works.
+
+lib.copyright = CONTENT
+lib.copyright {
+    table = tt_content
+    select {
+        orderBy = sorting
+        max = 1
+        pidInList = {$contentpage.copyrightPID}
+    }
+}
+
+
+
+/*
+lib.copyright.10 < styles.content.getLeft
+lib.copyright.10.select.pidInList = {$contentpage.copyrightPID}
+lib.copyright.10.stdWrap.wrap = <div class="copyrightFrame">|</div>
+
+lib.copyright.20 < styles.content.get
+lib.copyright.20.select.pidInList = {$contentpage.copyrightPID}
+lib.copyright.20.stdWrap.wrap = <div class="copyrightFrame">|</div>
+
+lib.copyright.30 < styles.content.getRight
+lib.copyright.30.select.pidInList = {$contentpage.copyrightPID}
+lib.copyright.30.stdWrap.wrap = <div class="copyrightFrame-last">|</div>
+*/

@@ -1,0 +1,11 @@
+lib.title = CONTENT
+lib.title {
+    wrap = <div id="title">|</div>
+    table = tt_content
+    select {
+        orderBy = sorting
+        where = colPos = 3
+        languageField = sys_language_uid
+    }
+    #renderObj.stdWrap.dataWrap = <div id="logo">|</div>
+}

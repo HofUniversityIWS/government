@@ -1,0 +1,26 @@
+# Copy basic menu object from TS template 'menu' so we don't have to repeat all that
+menu.top < menu.defaults
+menu.top {
+    # Also show pages which have not-in-menu flag set in page properties
+    includeNotInMenu = 0
+
+    # Create a menu out of the pages specifically listed under special.value
+    special = directory
+    special.value = {$menu.top.pages}
+
+    entryLevel = 0
+
+    1 {
+        expAll = 1
+        wrap = <ul>|</ul>
+        NO {
+            doNotShowLink = 0
+            wrapItemAndSub = <li class="first">|</li>|*|<li>|</li>|*|<li class="last">|</li>
+        }
+    }
+
+    2 >
+    3 >
+
+    stdWrap.prepend.data = LLL:{$filepaths.l10n}:nav_top
+}

@@ -1,0 +1,35 @@
+page.headerData {
+    10 = TEMPLATE
+    10 {
+        template =< plugin.tx_automaketemplate_pi1
+        workOnSubpart = DOCUMENT_HEAD
+    }
+
+    20 = TEXT
+    20.value = <meta name="robots" content="noindex,follow">
+
+    30 = COA
+    30 {
+        10 = LOAD_REGISTER
+        10 {
+            title {
+                data = TSFE:tmpl|setup|sitetitle
+                htmlSpecialChars = 1
+            }
+            href {
+                typolink {
+                    parameter = {$contentpage.homeID},100
+                    returnLast = url
+                }
+            }
+        }
+
+        20 = TEXT
+        20 {
+            value = <link rel="alternate" type="application/rss+xml" title="{register:title}" href="{register:href}">
+            insertData = 1
+        }
+
+        90 = RESTORE_REGISTER
+    }
+}

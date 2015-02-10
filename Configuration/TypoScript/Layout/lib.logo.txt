@@ -1,0 +1,16 @@
+# The method used here to fetch a record from a page or folder is slightly different from the one used
+# to fetch the loginbox in lib.contentleft
+# The method here doesn't refer to a specific record but takes the first record from the folder. This
+# has the advantage that an editor can delete the record and just create a new one, and it still works.
+
+lib.logo= CONTENT
+lib.logo {
+    table = tt_content
+    select {
+        orderBy = sorting
+        colPos = 1
+        max = 1
+        pidInList = {$contentpage.logoPID}
+    }
+    renderObj.stdWrap.dataWrap = <div id="logo">|</div>
+}

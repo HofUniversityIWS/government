@@ -1,0 +1,19 @@
+lib.stdheader {
+  10.key {
+    # Automatically use h4, if colPos=1 and layout>0
+    override = 4
+    override {
+      if {
+        # If the element is on colPos=1
+        isTrue = 1
+        isTrue.if {
+          value = 1
+          equals.field = colPos
+        }
+        # If the "box" layout (layout>0) is used
+        value = 0
+        isGreaterThan.field = layout
+      }
+    }
+  }
+}

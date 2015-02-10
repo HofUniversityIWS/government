@@ -1,0 +1,43 @@
+# Configuring the Auto-Parser for main template:
+
+plugin.tx_automaketemplate_pi1 {
+
+  # Read the template file
+  content = FILE
+  content.file = {$filepaths.templates}{$plugin.tx_automaketemplate_pi1.templatefile}
+
+  elements {
+    BODY.all = 1
+    BODY.all.subpartMarker = DOCUMENT_BODY
+    HEAD.all = 1
+    HEAD.all.subpartMarker = DOCUMENT_HEAD
+
+    # Configure which HTML-tags should be made replacable by subparts
+    NAV.id.nav-top = 1
+    NAV.id.nav-help = 1
+    DIV.id.search = 1
+    DIV.id.title = 1
+    DIV.id.title.includeWrappingTag = 1
+    DIV.id.logo = 1
+    DIV.id.logo.includeWrappingTag = 1
+    DIV.id.breadcrumb = 1
+    DIV.id.breadcrumb.includeWrappingTag = 1
+    NAV.id.nav-main = 1
+
+    DIV.id.content-left-output = 1
+    DIV.id.content-column = 1
+    DIV.id.content-right = 1
+
+    NAV.id.nav-footer = 1
+    DIV.id.footer-logo = 1
+    DIV.id.copyright = 1
+
+    #H1.all = 1
+
+    ## Remove some tags from HTML head section (because TYPO3 will add these dynamically)
+    HEAD.rmTagSections = title,meta,link
+  }
+
+  # Prefix all relative paths in the HTML template with this value
+  #relPathPrefix = {$filepaths.templates}
+}

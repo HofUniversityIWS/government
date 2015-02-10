@@ -1,0 +1,34 @@
+# Copy basic menu object from TS template 'menu' so we don't have to repeat all that
+menu.help < menu.defaults
+menu.help {
+    # Also show pages which have not-in-menu flag set in page properties
+    includeNotInMenu = 0
+
+    # Create a menu out of the pages specifically listed under special.value
+    special = directory
+    special.value = {$menu.help.pages}
+
+    entryLevel = 0
+
+    1 {
+        expAll = 1
+        wrap = <ul>|</ul>
+        NO {
+            doNotShowLink = 0
+            wrapItemAndSub = <li class="first">|</li> |*| <li>|</li> |*| <li class="last">|</li>
+        }
+
+        # Special link rewrite for contrast view
+        NO {
+            doNotLinkIt = 1
+            doNotLinkIt.if < lib.tx_contrast.isModule
+            stdWrap2 < lib.tx_contrast.menuLink
+            stdWrap2.ATagParams < menu.help.1.NO.ATagParams
+        }
+    }
+
+    2 >
+    3 >
+
+    stdWrap.prepend.data = LLL:{$filepaths.l10n}:nav_help
+}

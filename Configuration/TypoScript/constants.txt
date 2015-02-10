@@ -1,0 +1,185 @@
+config {
+    # cat=config; type=boolean; label=Admin Panel: Turn on admin panel (mainly for testing purposes only)
+    adminPanel = 0
+
+    # cat=config; type=boolean; label=Debugging: Turn on debugging (testing purposes only)
+    debug = 0
+
+    # cat=config; type=string; label=Domain name for Base URL: (excluding slashes and protocol like http://)
+    domain = gp-new.lx-lehre.hof-university.de
+}
+
+filepaths {
+    # cat=filepaths; type=string; label=HTML Templates: Location of the (X)HTML templates relative to site
+    templates = fileadmin/default/templates/
+
+    # cat=filepaths; type=string; label=CSS: Location of the Cascading Style Sheets relative to site
+    css = fileadmin/default/templates/css/
+
+    # cat=filepaths; type=string; label=Images: Location of the images relative to site
+    images = fileadmin/default/templates/images/
+
+    # cat=filepaths; type=string; label=Scripts: Location of the Javascript files relative to site
+    scripts = fileadmin/default/templates/scripts/
+
+    # cat=filepaths; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
+    extensiontemplates = fileadmin/default/templates/extensions/
+
+    # cat=filepaths; type=string; label=Localization path: Path for localizations of custom TypoScript labels
+    l10n = fileadmin/default/templates/l10n/de.locallang.xlf
+}
+
+contrast.stylesheet = fileadmin/default/templates/css/contrast.css
+
+menu {
+    # cat=navigation menus; type=string; label= Top-menu pages: Comma separated list of page id's to be included in top-left menu.
+    top.pages = 232
+
+    # cat=navigation menus; type=string; label= Help-menu pages: Comma separated list of page id's to be included in top-right menu.
+    help.pages = 238
+}
+
+plugin.tx_automaketemplate_pi1 {
+    # cat=plugin.automaketemplate; type:string; label= HTML template file: Name of the HTML page template file (without path, see constant for filepaths.templates)
+    templatefile = index.html
+}
+
+plugin.tt_news {
+    # cat=plugin.tt_news; type=string; label= pid_list: Comma separated list of folder id's containing which contain news records.
+    pid_list = 260
+
+    # cat=plugin.tt_news; type=int+; label= singlePid: Default ID of the page containing the tt_news SINGLE-view plugin
+    singlePid = 258
+
+    # cat=plugin.tt_news; type=int+; label= limit: Default maximum number of items to be shown in LIST-view
+    limit = 3
+
+    # Date and time formats according to active locales
+    dateformat = %x
+    dateandtimeformat = %c
+
+    # Short notation date format according to international ISO standard
+    shortdateformat = %Y-%m-%d
+    timeformat = %H:%M
+}
+
+plugin.tx_indexedsearch {
+    # cat=plugin.indexed_search; type=int+; label= Search Page ID: UID of the page which contains the indexed search plugin.
+    searchpageID = 241
+}
+
+plugin.tt_news {
+    catTextMode = 0
+    catImageMode = 0
+    displayXML.xmlTitle = TYPO3 Government Package
+
+    singleMaxW = 200
+    singleMaxH = 150
+    listMaxW = 200
+    listMaxH = 150
+}
+
+plugin.meta {
+    # cat=plugin.meta; type=string; label= Description: Write a short abstract for your website.
+    description = This TYPO3 Government Package helps you to get started with TYPO3. It provides a basic website setup with examples for the most used features. On top of that, this package contains many helpful comments and notes on how the system works
+
+    # cat=plugin.meta; type=string; label= Keywords: Enter a comma separated list of keywords.
+    keywords = TYPO3, government package, install, demo site, example setup, content management, enterprise
+
+    # cat=plugin.meta; type=string; label= Robots: Use for instance these codes: Index all pages: "all".  Index no pages: "none". Only this page: "index,nofollow".  Only subpages: "noindex,follow"
+    robots = all
+
+    # cat=plugin.meta; type=string; label= Copyright info: Enter copyright information, eg. "Me Myself and I, 2001. All rights reserved."
+    copyright = typo3.org GPL
+
+    # cat=plugin.meta; type=string; label= Reply-to email
+    email =
+
+    # cat=plugin.meta; type=string; label= Author: Enter name of author.
+    author = typo3.org
+
+    # cat=plugin.meta; type=int+; label= Revisit after: Number of days between search engine visits.
+    revisit = 7
+
+
+    # The meta tags below are not used on this website, if you want to use these, you can configure that in TypoScript template page.meta
+
+    # cat=plugin.meta; type=boolean; label=Always include global.
+    includeGlobal = 0
+
+    # cat=plugin.meta; type=options[,Arabic=ar,Chinese=zh,Danish=dk,Dutch=nl,English=en,Finnish=fi,French=fr,German=de,Greek=el,Hebrew=he,Icelandic=is,Italian=it,Japanese=ja,Norwegian=no,Polish=pl,Portuguese=pt,Russian=ru,Spanish=es,Swedish=sv,Turkish=tr,Multi language=mul]; label= Language: Select language of the content.
+    language = de
+
+    # cat=plugin.meta; type=string; label= Distribution
+    distribution = GLOBAL
+
+    # cat=plugin.meta; type=options[,General,Mature,14 years,Restricted]; label= Rating
+    rating = General
+
+}
+
+a21glossary.glossaryPage = 28
+a21glossary.storagePage = 28
+
+styles.content {
+    # This defines the maximum width of images inserted in content records of type Images or Text-with-images.
+    # There are seperate settings for images floated next to text (..InText)
+    imgtext {
+        maxW = 960
+        maxWInText = 200
+        borderThick = 1
+        linkWrap.newWindow = 1
+    }
+    uploads {
+        jumpurl_secure = 1
+        jumpurl_secure_mimeTypes = pdf=application/pdf, doc=application/msword
+        jumpurl = 1
+    }
+    # Required to be able to render custom tags defined in the RTE in front-end
+    links.allowTags = h1,h2,h3,h4,h5,h6,b,i,u,a,img,br,div,center,pre,font,hr,sub,sup,p,strong,em,li,ul,ol,blockquote,strike,span,table,td,tr,tbody,dl,dd,dt,iframe
+    # Remove targets
+    links.extTarget =
+}
+
+content.wrap.header1 = <h1> | </h1>
+content.wrap.header2 = <h2> | </h2>
+content.wrap.header3 = <h3> | </h3>
+content.wrap.header4 = <h4> | </h4>
+
+contentpage {
+    # cat=contentpage; type=int+; label= Logo source PID: Parent ID of the logo record used on content pages.
+    logoPID = 244
+
+    # cat=contentpage; type=int+; label= Footer source PID: Parent ID of the footer record used on content pages.
+    footerPID = 243
+
+    # cat=contentpage; type=int+; label= Copyright source PID: Parent ID of the copyright record used on content pages.
+    copyrightPID = 242
+
+    # cat=contentpage; type=int+; label= ID of the home page: ID of the home (root) page of the site.
+    homeID = 1
+
+    ## cat=contentpage; type=int+; label= loginboxPID: ID of the folder containing the login box record (to be shown on multiple pages)
+    #loginboxPID = 21
+
+    ## cat=contentpage; type=int+; label= loginboxUID: UID of the login box record (to be shown on multiple pages)
+    #loginboxUID = 31
+
+    ## cat=contentpage; type=int+; label= loginpageID: UID of the customer login page.
+    #loginpageID = 28
+
+    ## cat=contentpage; type=int+; label= examplelanguagesID: UID of the page which has the language menu enabled
+    #examplelanguagesID = 25
+
+    # cat=contentpage; type=string; label= language1: name of the default language of this site
+    language1 = Deutsch
+
+    # cat=contentpage; type=string; label= language2: name of the second language of this site
+    language2 = English
+}
+
+# Set the language of meta tag with DC.language to Danish, when in Danish
+[globalVar = GP:L = 1]
+    plugin.meta.language = en
+    filepaths.l10n = fileadmin/default/templates/l10n/locallang.xlf
+[global]
