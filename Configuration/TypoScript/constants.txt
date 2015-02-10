@@ -5,8 +5,6 @@ config {
     # cat=config; type=boolean; label=Debugging: Turn on debugging (testing purposes only)
     debug = 0
 
-    # cat=config; type=string; label=Domain name for Base URL: (excluding slashes and protocol like http://)
-    domain = gp-new.lx-lehre.hof-university.de
 }
 
 filepaths {
