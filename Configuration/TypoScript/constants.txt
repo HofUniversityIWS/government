@@ -1,3 +1,14 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jquerycolorbox/static/constants.txt">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/settings/constants.txt">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/defaultmailform/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:indexed_search/Configuration/TypoScript/constants.txt">
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:menu_balancer/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:contrast/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:form/Configuration/TypoScript/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:a21glossary/Configuration/TypoScript/Accessibility/constants.txt">
+
+
 config {
     # cat=config; type=boolean; label=Admin Panel: Turn on admin panel (mainly for testing purposes only)
     adminPanel = 0
