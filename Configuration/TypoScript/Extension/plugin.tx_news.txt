@@ -1,3 +1,12 @@
-plugin.tx_news.settings.detail {
-	showSocialShareButtons = 0
+plugin.tx_news {
+	settings {
+		detail {
+			showSocialShareButtons = 0
+		}
+	}
+	view {
+		templateRootPaths.200 = EXT:government/Resources/Private/Overrides/News/Templates/
+		partialRootPaths.200 = EXT:government/Resources/Private/Overrides/News/Partials/
+		layoutRootPaths.200 = EXT:government/Resources/Private/Overrides/News/Layouts/
+	}
 }
