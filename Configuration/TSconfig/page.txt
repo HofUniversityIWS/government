@@ -1,0 +1,78 @@
+
+### BackendLayout####
+
+##id storagepage of gridlayout
+TCEFORM.pages.backend_layout.PAGE_TSCONFIG_ID=3
+TCEFORM.pages.backend_layout_next_level.PAGE_TSCONFIG_ID=3
+
+##hide no backend layout label
+TCEFORM.pages.backend_layout_next_level.removeItems= -1
+TCEFORM.pages.backend_layout.removeItems= -1
+
+##give empty label a definition
+#TCEFORM.pages.backend_layout.altLabels.0 = Standard Layout
+
+#####################
+
+# Show only the chosen columns in the page module
+# 0=normal, 1=left, 2=right, 3=border
+# mod.SHARED.colPos_list = 1,0,2
+
+# Remove the 'border' option from selectbox 'column' in content records
+# TCEFORM.tt_content.colPos.keepItems = 1,0,2
+
+# Set the default label and flag
+mod.SHARED.defaultLanguageLabel = Deutsch
+mod.SHARED.defaultLanguageFlag = de.gif
+
+# Show the content element wizard with tabs (for consistency)
+mod.wizards.newContentElement.renderMode = tabs
+
+# Reduce header layouts to default,1,2,3
+TCEFORM.tt_content.header_layout.removeItems = 5
+
+# Erzeuge bei Elemente Einträge im Section Framedropdown
+#TCEFORM.tt_content.section_frame.removeItems = 1,2,5,6,10,11,12,20,21,66
+#TCEFORM.tt_content.section_frame.addItems.101 = Profi-Features-Liste
+#TCEFORM.tt_content.section_frame.addItems.102 = Factsheet-Button
+#TCEFORM.tt_content.section_frame.addItems.102 = Kundenzitat
+
+# Erzeuge bei Elemente Einträge im Layoutdropdown für DIVs
+TCEFORM.tt_content.layout.altLabels {
+  1 = Box
+  2 = Box News
+  3 = Box Download
+}
+TCEFORM.tt_content.layout.addItems {
+  4 = Box Link-Liste
+  5 = Information
+  6 = Zitat
+  #7 = Link-Liste
+}
+
+
+
+# Rename the default options for the frontend layout field
+# TCEFORM.pages.layout.altLabels.0 = Standard 1 Spalte
+# TCEFORM.pages.layout.altLabels.1 = 2 Spalten
+# TCEFORM.pages.layout.altLabels.2 =
+# TCEFORM.pages.layout.altLabels.3 =
+
+# There is no need for the Alias field in page properties when we use RealURL
+TCEFORM.pages.alias.disabled = 1
+
+
+
+# Keep <br> in RTE
+RTE.default.proc.dontConvBRtoParagraph = 1
+
+
+# Special backend condition to set defaults to
+# "h4" and "box" if a new element in the right
+# column is to be created
+[globalVar = GP:defVals|tt_content|colPos = 1]
+TCAdefaults.tt_content {
+  header_layout = 4
+  layout = 1
+}
+[end]
