@@ -1,6 +1,7 @@
 # Include static Templates
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/constants.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:jquerycolorbox/static/constants.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/constants.txt">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/settings/constants.txt">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/defaultmailform/constants.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:indexed_search/Configuration/TypoScript/constants.txt">
