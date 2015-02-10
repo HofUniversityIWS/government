@@ -1,0 +1,74 @@
+.row.top {
+  @media (min-width:768px) {
+    margin-top: 20px;
+    li {
+      border-right: 1px solid @gp_font_color;
+    }
+  }
+
+
+  li {
+    line-height: 1em;
+    a {
+      font-size: .8em;
+      color: @gp_font_color;
+
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .text-right li:nth-last-child(2) {
+    border:none;
+  }
+  button {
+    background: none;
+    border: none;
+  }
+
+  ul.visible-xs li {
+    float:right;
+    &:first-child {
+      float:left;
+    }
+    i {
+      font-size: 2em;
+      padding:10px;
+    }
+  }
+
+
+}
+
+header {
+  text-align: center;
+  color: #bad7f8;
+  color: #5d93cc;
+
+  background: -moz-linear-gradient(center top, @gp_brand_primary 0%, lighten(@gp_brand_primary, 50%) 0%, lighten(@gp_brand_primary, 20%) 100%);
+  .row {
+    height: 180px;
+    padding: 30px;
+    background-image: url("../img/logo-typo3-symbol-transparent.png");
+    background-repeat:no-repeat;
+    background-position: right;
+  }
+}
+
+ol.breadcrumb {
+  margin-top: 20px;
+  background: none;
+
+  li:before {
+    color: #cccccc;
+    .glyphicon_before();
+    content: "\e072";
+  }
+  li:first-child {
+    &:before {
+      content: "";
+    }
+  }
+}
+
+

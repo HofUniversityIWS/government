@@ -1,0 +1,79 @@
+body, html {
+  background-color: @gp_background_outer;
+  font-size: .9em;
+}
+
+.container {
+  color: @gp_font_color;
+  &.bg {
+    background-color: @gp_background_inner;
+    margin-bottom: 50px;
+    box-shadow: 0 0.15em 0.3em rgba(0, 0, 0, 0.15);
+  }
+  &.out {
+    background-color: @gp_background_outer;
+    padding: 0px;
+    overflow: hidden;
+  }
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: @gp_brand_primary;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+h3,h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+ul.gp {
+  padding-left:0px;
+  li {padding:0px; margin-top:12px;}
+  >li {
+    font-weight: bold;
+    list-style-type: none;
+    a {
+      color: #b1b1b1;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 25px;
+      li {
+        font-weight: normal;
+      }
+    }
+  }
+  &>li>a:before{
+    .glyphicon_before();
+    content: "\e072";
+    margin-right:5px;
+  }
+}
+
+.panel-default {
+  background-color: #f7f7f7;
+  border-radius:0px;
+  border: none;
+
+  .panel-heading {
+    background: -moz-linear-gradient(center top , #a7a7a7 0%, #666 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color:white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .panel-body {
+    padding-bottom: 0px;
+  }
+  .list-group-item {
+    background:none;
+    border:none;
+  }
+}
