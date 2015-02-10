@@ -21,6 +21,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.automaketemplate.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.felogin.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.indexed_search.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.tx_news.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.wt_spamshield.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/jquerycolorbox.txt">
 
