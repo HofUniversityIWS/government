@@ -55,82 +55,81 @@ plugin.tx_automaketemplate_pi1 {
     templatefile = index.html
 }
 
-plugin.tt_news {
+#plugin.tt_news {
     # cat=plugin.tt_news; type=string; label= pid_list: Comma separated list of folder id's containing which contain news records.
-    pid_list = 260
+ #   pid_list = 260
 
     # cat=plugin.tt_news; type=int+; label= singlePid: Default ID of the page containing the tt_news SINGLE-view plugin
-    singlePid = 258
+ ##  singlePid = 258
 
     # cat=plugin.tt_news; type=int+; label= limit: Default maximum number of items to be shown in LIST-view
-    limit = 3
+ #   limit = 3
 
     # Date and time formats according to active locales
-    dateformat = %x
-    dateandtimeformat = %c
+ #   dateformat = %x
+ #   dateandtimeformat = %c
 
     # Short notation date format according to international ISO standard
-    shortdateformat = %Y-%m-%d
-    timeformat = %H:%M
-}
+ #   shortdateformat = %Y-%m-%d
+ #   timeformat = %H:%M
+#}
 
 plugin.tx_indexedsearch {
     # cat=plugin.indexed_search; type=int+; label= Search Page ID: UID of the page which contains the indexed search plugin.
     searchpageID = 241
 }
 
-plugin.tt_news {
-    catTextMode = 0
-    catImageMode = 0
-    displayXML.xmlTitle = TYPO3 Government Package
+#plugin.tt_news {
+ #   catTextMode = 0
+ #catImageMode = 0
+ #displayXML.xmlTitle = TYPO3 Government Package
 
-    singleMaxW = 200
-    singleMaxH = 150
-    listMaxW = 200
-    listMaxH = 150
+ #   singleMaxW = 200
+ #   singleMaxH = 150
+ #   listMaxW = 200
+ #   listMaxH = 150
+#}
+
+
+a21glossary {
+    # cat=a21glossary; type=int+; label= Glossary Page source UID: Page ID of the glossary page.
+    glossaryPage = 28
+    # cat=a21glossary; type=int+; label= Storage Page source UID: Page ID of the glossary storage page.
+    storagePage = 28
 }
 
-plugin.meta {
-    # cat=plugin.meta; type=string; label= Description: Write a short abstract for your website.
+page.meta {
+    # cat=page.meta; type=string; label= Description: Write a short abstract for your website.
     description = This TYPO3 Government Package helps you to get started with TYPO3. It provides a basic website setup with examples for the most used features. On top of that, this package contains many helpful comments and notes on how the system works
 
-    # cat=plugin.meta; type=string; label= Keywords: Enter a comma separated list of keywords.
+    # cat=page.meta; type=string; label= Keywords: Enter a comma separated list of keywords.
     keywords = TYPO3, government package, install, demo site, example setup, content management, enterprise
 
-    # cat=plugin.meta; type=string; label= Robots: Use for instance these codes: Index all pages: "all".  Index no pages: "none". Only this page: "index,nofollow".  Only subpages: "noindex,follow"
+    # cat=page.meta; type=string; label= Robots: Use for instance these codes: Index all pages: "all".  Index no pages: "none". Only this page: "index,nofollow".  Only subpages: "noindex,follow"
     robots = all
 
-    # cat=plugin.meta; type=string; label= Copyright info: Enter copyright information, eg. "Me Myself and I, 2001. All rights reserved."
+    # cat=page.meta; type=string; label= Copyright info: Enter copyright information, eg. "Me Myself and I, 2001. All rights reserved."
     copyright = typo3.org GPL
 
-    # cat=plugin.meta; type=string; label= Reply-to email
+    # cat=page.meta; type=string; label= Reply-to email
     email =
 
-    # cat=plugin.meta; type=string; label= Author: Enter name of author.
+    # cat=page.meta; type=string; label= Author: Enter name of author.
     author = typo3.org
 
-    # cat=plugin.meta; type=int+; label= Revisit after: Number of days between search engine visits.
+    # cat=page.meta; type=int+; label= Revisit after: Number of days between search engine visits.
     revisit = 7
 
 
-    # The meta tags below are not used on this website, if you want to use these, you can configure that in TypoScript template page.meta
+    # The meta tags below are not used on this website, if you want to use these, you can configure that in TypoScript template Page/page.meta
 
-    # cat=plugin.meta; type=boolean; label=Always include global.
-    includeGlobal = 0
-
-    # cat=plugin.meta; type=options[,Arabic=ar,Chinese=zh,Danish=dk,Dutch=nl,English=en,Finnish=fi,French=fr,German=de,Greek=el,Hebrew=he,Icelandic=is,Italian=it,Japanese=ja,Norwegian=no,Polish=pl,Portuguese=pt,Russian=ru,Spanish=es,Swedish=sv,Turkish=tr,Multi language=mul]; label= Language: Select language of the content.
-    language = de
-
-    # cat=plugin.meta; type=string; label= Distribution
+    # cat=page.meta; type=string; label= Distribution
     distribution = GLOBAL
 
-    # cat=plugin.meta; type=options[,General,Mature,14 years,Restricted]; label= Rating
+    # cat=page.meta; type=options[,General,Mature,14 years,Restricted]; label= Rating
     rating = General
 
 }
-
-a21glossary.glossaryPage = 28
-a21glossary.storagePage = 28
 
 styles.content {
     # This defines the maximum width of images inserted in content records of type Images or Text-with-images.

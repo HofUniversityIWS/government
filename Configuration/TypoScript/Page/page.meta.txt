@@ -1,15 +1,15 @@
 page.meta {
     # Use the meta tag 'description' from the constants as default value
     # If the meta field description in the page properties is filled, then this will override the default.
-    description = {$plugin.meta.description}
+    description = {$page.meta.description}
     description.override.field = description
 
-    author = {$plugin.meta.author}
+    author = {$page.meta.author}
     author.override.field = author
 
-    keywords = {$plugin.meta.keywords}
+    keywords = {$page.meta.keywords}
     keywords.override.field = keywords
 
-    robots = {$plugin.meta.robots}
-    revisit-after = {$plugin.meta.revisit} days
+    robots = {$page.meta.robots}
+    revisit-after = {$page.meta.revisit} days
 }
