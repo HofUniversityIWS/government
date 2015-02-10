@@ -1,10 +1,6 @@
 
 ### BackendLayout####
 
-##id storagepage of gridlayout
-TCEFORM.pages.backend_layout.PAGE_TSCONFIG_ID=3
-TCEFORM.pages.backend_layout_next_level.PAGE_TSCONFIG_ID=3
-
 ##hide no backend layout label
 TCEFORM.pages.backend_layout_next_level.removeItems= -1
 TCEFORM.pages.backend_layout.removeItems= -1
@@ -31,13 +27,13 @@ mod.wizards.newContentElement.renderMode = tabs
 # Reduce header layouts to default,1,2,3
 TCEFORM.tt_content.header_layout.removeItems = 5
 
-# Erzeuge bei Elemente Einträge im Section Framedropdown
+# Erzeuge bei Elemente EintrÃ¤ge im Section Framedropdown
 #TCEFORM.tt_content.section_frame.removeItems = 1,2,5,6,10,11,12,20,21,66
 #TCEFORM.tt_content.section_frame.addItems.101 = Profi-Features-Liste
 #TCEFORM.tt_content.section_frame.addItems.102 = Factsheet-Button
 #TCEFORM.tt_content.section_frame.addItems.102 = Kundenzitat
 
-# Erzeuge bei Elemente Einträge im Layoutdropdown für DIVs
+# Erzeuge bei Elemente EintrÃ¤ge im Layoutdropdown fï¿½r DIVs
 TCEFORM.tt_content.layout.altLabels {
   1 = Box
   2 = Box News
