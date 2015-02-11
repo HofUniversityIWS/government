@@ -1,74 +1,29 @@
 <div class="container out">
-
-	
-	
     <div class="row top ">
         <div class="col-sm-4">
         	<f:format.raw>{navTop}</f:format.raw>
-        	<f:comment>
-            <ul class="list-inline hidden-xs">
-                <li><a href="#">Start</a></li>
-                <li><a href="#">Glossar</a></li>
-                <li><a href="#">Inhaltsverzeichnis</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-
-			</f:comment>
             <ul class="list-inline visible-xs">
                 <li><a href="#" title="Home"><i class="glyphicon glyphicon-home"></i></a></li>
                 <li><a href="#" title="Kontrastansicht"><i class="glyphicon glyphicon-adjust"></i></a></li>
                 <li><a href="#" title="Schriftgröße"><i class="glyphicon glyphicon-text-size"></i></a></li>
             </ul>
         </div>
-        <div class="col-sm-8 text-right ">
+        <div class="col-sm-8 text-right">
         	<f:format.raw>{navHelp}</f:format.raw>
-        	<f:comment>
-            <ul class="list-inline hidden-xs">
-                <li><a href="#">Kontrastansicht</a></li>
-                <li><a href="#">Schriftgröße</a></li>
-                <li><a href="#">Neuigkeiten</a></li>
-                <li>
-                    <form method="" action="">
-                        <input type="text" value="" name="">
-                        <button type="submit" class="glyphicon glyphicon-search"></button>
-                    </form>
-                </li>
-            </ul>
-            </f:comment>
             <f:format.raw>{search}</f:format.raw>
         </div>
     </div>
-	
-
-
     <header>
         <div class="row">
-
             <f:format.raw>{logo}</f:format.raw>
-            <f:comment>
-                <img src="assets/img/logo-government-package.png" alt="Government Package" />
-            </f:comment>
-
         </div>
     </header>
-
 </div>
 
 <div class="container bg">
-
 		<f:format.raw>{breadcrumb}</f:format.raw>
-        <f:comment>
-        <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Library</a></li>
-            <li class="active">Data</li>
-        </ol>
-		</f:comment>
-
         <div class="row">
             <div class="col-md-3 left-col">
-
-
 
 
 
@@ -123,40 +78,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
                 <hr class="invisible" />
                 <h3>Aktuelles</h3>
                 <f:format.raw>{contentLeftOutput}</f:format.raw>
-<f:comment>
-                <div class="panel panel-default">
-
-                    <!-- List group -->
-                    <ul class="list-group ">
-                        <li class="list-group-item">
-                            <a href="#"><h4>Aktuelle Meldungen ganz einfach verwalten</h4></a>
-                            <p>Mit dem News-Modul von TYPO3 verwalten Sie problemlos Ihre...</p>
-                            <p><a href="#">[mehr]</a></p>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#"><h4>Aktuelle Meldungen ganz einfach verwalten</h4></a>
-                            <p>Mit dem News-Modul von TYPO3 verwalten Sie problemlos Ihre...</p>
-                            <p><a href="#">[mehr]</a></p>
-                        </li>
-                    </ul>
-                </div>
-                </f:comment>
-
-
-
             </div>
 
 
@@ -165,99 +89,27 @@
 
             <div class="col-md-6 mid-col" id="content">
                 <f:format.raw>{contentColumn}</f:format.raw>
-                <f:comment>
-                    <h1>Das TYPO3 Government Package</h1>
-                    <hr />
-                    <h2>TYPO3 für Ämter, Behörden und Gemeinden</h2>
-                    <p>Das TYPO3 Government Package ist eine Musterwebsite für Behörden. Sie dient zur Demonstration und als Starthilfe für..</p>
-                    <p>Eine detaillierte Beschreibung des Pakets, einen Bericht über Hintergründe und Entwicklung, sowie einen Schnellstart finden Sie auf der <a href="#">Seite über das Paket.</a></p>
-
-
-                </f:comment>
-
-
-
-            </div><!--End Content-->
-
-
-
-
+            </div><!--End Middle Content-->
 
             <div class="col-md-3 right-col">
-
-
-
                 <f:format.raw>{contentRight}</f:format.raw>
-                <f:comment>
-                    <div class="panel panel-default">
-                    <!-- Default panel contents -->
-                    <div class="panel-heading">Panel heading</div>
-                    <div class="panel-body">
-                        <p>TYPO3 wird bereits von folgenden Behörden und Institutionen verwendet:</p>
-                    </div>
-
-                    <!-- List group -->
-                    <ul class="list-group ">
-                        <li class="list-group-item">
-                            <a href="#">Aktueller Entwurf der BITV 2.0 in mehreren Sprachen</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Wikipedia-Artikel zur Barrierefreiheit</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#">Aktueller Entwurf der BITV 2.0 in mehreren Sprachen</a>
-                        </li>
-                    </ul>
-                </div>
-                </f:comment>
-
-
-
-
-
             </div>
         </div>
-
-
-
-
 </div>
 
 <footer>
     <div class="container">
         <div class="row">
-
-
-
             <div class="col-sm-8">
-
                 <f:format.raw>{navFooter}</f:format.raw>
-
-
             </div>
-
-
-
-
-
             <div class="col-sm-4">
-
                 <f:format.raw>{footerLogo}</f:format.raw>
-                <f:comment>
-                    <img src="assets/img/logo-government-package.png" alt="Government Package" />
-                </f:comment>
-
-
-
-
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 text-center copyright">
                 <f:format.raw>{copyright}</f:format.raw>
-                <f:comment>
-                <a href="#">© 2011 TYPO3 Government Package Generic Template · Version 1.0</a>
-                </f:comment>
             </div>
         </div>
     </div>
