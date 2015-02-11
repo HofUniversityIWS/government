@@ -12,5 +12,5 @@ lib.logo {
         max = 1
         pidInList = {$contentpage.logoPID}
     }
-    renderObj.stdWrap.dataWrap = <div id="logo">|</div>
+    #renderObj.stdWrap.dataWrap = <div id="logo">|</div>
 }

@@ -77,23 +77,23 @@ page {
   		# Insert menu's from lib-objects into the appropriate subparts
       navTop < menu.top
       navHelp < menu.help
-      #nav-main < menu.firstlevel
+      navMain < menu.firstlevel
       breadcrumb < menu.breadcrumb
 
       #language < menu.language
 
       # Insert various TypoScript lib objects into the appropriate subparts of the template
-      #title < lib.title
-      #logo < lib.logo
+      title < lib.title
+      logo < lib.logo
       #search < lib.searchbox
-      #nav-footer < menu.footer
-      #footer-logo < lib.footer-logo
-      #copyright < lib.copyright
+      #navFooter < menu.footer
+      footerLogo < lib.footer-logo
+      copyright < lib.copyright
 
       # Insert content as already constructed in TypoScript objects into subparts
-      #content-left-output < lib.contentleft
+      contentLeftOutput < lib.contentleft
       contentColumn < lib.content
-      #content-right < lib.contentright
+      contentRight < lib.contentright
   	}
   }
 }
