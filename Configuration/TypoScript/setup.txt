@@ -50,6 +50,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.meta.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.headerData.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.includeJSlibs.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.includeJS.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.includeCSS.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/reader.txt">

@@ -1,0 +1,5 @@
+page.includeJS{
+    modernizr = fileadmin/default/templates/js/libs/modernizr-2.0.6.min.js
+    respond = https://oss.maxcdn.com/respond/1.4.2/respond.min.js
+    respond.allWrap = <!--[if lt IE 9]>|<![endif]-->
+}
