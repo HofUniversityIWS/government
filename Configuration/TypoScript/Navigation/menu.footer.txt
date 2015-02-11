@@ -19,15 +19,15 @@ menu.footer {
     # Modifiy the output by this extension:
     stdWrap.stdWrap.postUserFunc < lib.tx_menubalancer.userFunc
 
-    #stdWrap.stdWrap.postUserFunc {
-    #    # width/size - balance on how many columns?
-    #    size = 2
+    stdWrap.stdWrap.postUserFunc {
+        # width/size - balance on how many columns?
+        size = 2
 
-    #    // processing to find the elements
-    #    sizePattern = #<li[^>]*>#m
-    #    splitPattern = #(<li[^>]*>|</li>)#m
-    #    splitStart = <li
-    #    splitEnd = </li>
+        // processing to find the elements
+        sizePattern = #<li[^>]*>#m
+        splitPattern = #(<li[^>]*>|</li>)#m
+        splitStart = <li
+        splitEnd = </li>
 
         # remove the outer wrap (same as in [HMENU].wrap)
         unWrap = <ul class="gp">|</ul>
