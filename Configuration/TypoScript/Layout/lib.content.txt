@@ -29,16 +29,16 @@ lib.content {
 }
 
 # Insert the news plugin in single-view mode instead of normal page content if a news article is requested
-[globalVar = GP:tx_ttnews|tt_news > 0] && [globalVar = TSFE:id = {$plugin.tt_news.singlePid}]
-    lib.content.10 >
-    lib.content.10 = COA
-    lib.content.10 {
-        10 =< plugin.tt_news
-        10 {
-            # First empty the code field and then set it to single-view
-            code >
-            code = SINGLE
-        }
-        wrap = <article>|</article>
-    }
-[global]
+#[globalVar = GP:tx_ttnews|tt_news > 0] && [globalVar = TSFE:id = {$plugin.tt_news.singlePid}]
+#    lib.content.10 >
+#    lib.content.10 = COA
+#    lib.content.10 {
+#        10 =< plugin.tt_news
+#        10 {
+#            # First empty the code field and then set it to single-view
+#            code >
+#           code = SINGLE
+#      }
+#      wrap = <article>|</article>
+#    }
+#[global]
