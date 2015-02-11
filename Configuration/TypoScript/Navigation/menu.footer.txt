@@ -26,7 +26,7 @@ menu.footer {
         splitEnd = </li>
 
         # remove the outer wrap (same as in [HMENU].wrap)
-        unWrap = <ul>|</ul>
+        unWrap = <ul class="test">|</ul>
 
         # redo the wrapping (might be the same as in [HMENU].wrap)
         reWrap = <ul>|</ul>
