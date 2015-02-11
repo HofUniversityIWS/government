@@ -3,7 +3,7 @@ menu.breadcrumb = COA
 menu.breadcrumb {
   10 = HMENU
   10 {
-    #wrap = <div id="breadcrumb">|</div>
+    wrap = <div id="breadcrumb">|</div>
 
     # Select HMENU type 'special.rootline'
     special = rootline
@@ -26,7 +26,7 @@ menu.breadcrumb {
     #}
       1 = TMENU
       1 {
-        wrap = <ol class="breadcrumb">|</ol>
+        wrap = <ul>|</ul>
 
         # Always unfold all sub-levels of the menu
         #expAll = 1
@@ -49,16 +49,10 @@ menu.breadcrumb {
           #
           # See the TSref documentation for details about option split and other features:
           # http://typo3.org/documentation/document-library/references/doc_core_tsref/current/
-          wrapItemAndSub = <li>|</li>
+          wrapItemAndSub = <li class="first">|</li> |*| <li>|</li> |*| <li class="last">|</li>
 
           # HTML-encode special characters according to the PHP-function htmlSpecialChars
           stdWrap.htmlSpecialChars = 1
-       }
-       CUR = 1
-       CUR {
-       		wrapItemAndSub = <li class="active">|</li>
-       		stdWrap.htmlSpecialChars = 1
-       		doNotLinkIt = 1
        }
     }
     stdWrap.prepend =< lib.srHint
@@ -90,7 +84,7 @@ menu.breadcrumb {
     wrap = <li>|</li>
   }
 }
-
+*/
 # Else configure the breadcrumb for normal cases when no news article is shown
 #[else]
 
@@ -106,8 +100,6 @@ menu.breadcrumb {
     CUR.doNotLinkIt = 1
   }
 }
-
-*/
 
 #[global]
 

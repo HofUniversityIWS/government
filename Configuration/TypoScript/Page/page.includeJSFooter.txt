@@ -1,3 +1,0 @@
-page.includeJSFooter {
-    main = EXT:government/Resources/Public/JavaScript/main.min.js
-}
