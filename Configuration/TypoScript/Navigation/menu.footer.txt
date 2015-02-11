@@ -13,24 +13,28 @@ menu.footer {
     2 < .1
     3 < .1
 
+    # Only use class gp on first level
+    1.wrap = <ul class="gp">|</ul>
+
     # Modifiy the output by this extension:
     stdWrap.stdWrap.postUserFunc < lib.tx_menubalancer.userFunc
-    stdWrap.stdWrap.postUserFunc {
-        # width/size - balance on how many columns?
-        size = 2
 
-        // processing to find the elements
-        sizePattern = #<li[^>]*>#m
-        splitPattern = #(<li[^>]*>|</li>)#m
-        splitStart = <li
-        splitEnd = </li>
+    #stdWrap.stdWrap.postUserFunc {
+    #    # width/size - balance on how many columns?
+    #    size = 2
+
+    #    // processing to find the elements
+    #    sizePattern = #<li[^>]*>#m
+    #    splitPattern = #(<li[^>]*>|</li>)#m
+    #    splitStart = <li
+    #    splitEnd = </li>
 
         # remove the outer wrap (same as in [HMENU].wrap)
-        unWrap = <ul class="test">|</ul>
+        unWrap = <ul class="gp">|</ul>
 
         # redo the wrapping (might be the same as in [HMENU].wrap)
-        reWrap = <ul>|</ul>
+        reWrap = <ul class="gp">|</ul>
     }
 
-    stdWrap.prepend.data = LLL:{$filepaths.l10n}:nav_footer
+    stdWrap.prepend.data = LLL:{$filepaths.l10n}:nav-footer
 }
