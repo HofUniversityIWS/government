@@ -9,6 +9,7 @@ lib.contentleft {
         select.where = colPos = 2
         select.languageField = sys_language_uid
 
-        renderObj.stdWrap.dataWrap = <div id="c{field:uid}">|</div>
+        #renderObj.stdWrap.dataWrap = <div id="c{field:uid}">|</div>
+        renderObj.stdWrap.dataWrap = <div class="panel panel-default"><ul class="list-group">|</ul></div>
     }
 }

@@ -83,7 +83,7 @@ page {
       #language < menu.language
 
       # Insert various TypoScript lib objects into the appropriate subparts of the template
-      title < lib.title
+      #title < lib.title
       logo < lib.logo
       search < lib.searchbox
       navFooter < menu.footer
