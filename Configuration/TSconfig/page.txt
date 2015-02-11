@@ -1,4 +1,3 @@
-
 ### BackendLayout####
 
 ##hide no backend layout label
@@ -72,3 +71,10 @@ TCAdefaults.tt_content {
   layout = 1
 }
 [end]
+
+
+# Additional layout definition for EXT:news
+tx_news.templateLayouts {
+  default = default
+  aside = aside
+}
