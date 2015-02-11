@@ -6534,6 +6534,11 @@ html {
   background-color: #eeeeee;
   font-size: .9em;
 }
+.sr-hint {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
 .container {
   color: #555555;
 }
@@ -6634,8 +6639,17 @@ ul.gp > li > a:before {
 .row.top li:last-child {
   border-right: none;
 }
-.row.top .text-right li:nth-last-child(2) {
+.row.top .text-right ul {
+  display: inline;
+}
+.row.top .text-right ul li:last-child {
   border: none;
+}
+.row.top .text-right form {
+  display: inline;
+}
+.row.top .text-right form input {
+  height: 20px;
 }
 .row.top button {
   background: none;

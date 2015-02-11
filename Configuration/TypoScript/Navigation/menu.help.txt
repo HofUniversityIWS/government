@@ -12,10 +12,10 @@ menu.help {
 
     1 {
         expAll = 1
-        wrap = <ul>|</ul>
+        wrap = <ul class="list-inline hidden-xs">|</ul>
         NO {
             doNotShowLink = 0
-            wrapItemAndSub = <li class="first">|</li> |*| <li>|</li> |*| <li class="last">|</li>
+            wrapItemAndSub = <li>|</li>
         }
 
         # Special link rewrite for contrast view

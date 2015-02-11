@@ -85,8 +85,8 @@ page {
       # Insert various TypoScript lib objects into the appropriate subparts of the template
       title < lib.title
       logo < lib.logo
-      #search < lib.searchbox
-      #navFooter < menu.footer
+      search < lib.searchbox
+      navFooter < menu.footer
       footerLogo < lib.footer-logo
       copyright < lib.copyright
 

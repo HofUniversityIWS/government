@@ -33,12 +33,13 @@
                 <li><a href="#">Inhaltsverzeichnis</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
+
+			</f:comment>
             <ul class="list-inline visible-xs">
                 <li><a href="#" title="Home"><i class="glyphicon glyphicon-home"></i></a></li>
                 <li><a href="#" title="Kontrastansicht"><i class="glyphicon glyphicon-adjust"></i></a></li>
                 <li><a href="#" title="Schriftgröße"><i class="glyphicon glyphicon-text-size"></i></a></li>
             </ul>
-			</f:comment>
         </div>
         <div class="col-sm-8 text-right ">
         	<f:format.raw>{navHelp}</f:format.raw>
@@ -55,6 +56,7 @@
                 </li>
             </ul>
             </f:comment>
+            <f:format.raw>{search}</f:format.raw>
         </div>
     </div>
 	
@@ -207,7 +209,7 @@
 
 
 
-<f:format.raw>{contentRight}</f:format.raw>
+                <f:format.raw>{contentRight}</f:format.raw>
                 <f:comment>
                     <div class="panel panel-default">
                     <!-- Default panel contents -->
@@ -246,9 +248,10 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <ul class="gp">
 
+
+<div class="col-sm-4">wieder löschen:
+                <ul class="gp">
                     <li><a href="#">Elemente & Bedienung</a></li>
                     <li><a href="#">Überschriften und seiteninterne Navigation</a></li>
                     <li>
@@ -272,7 +275,6 @@
                 </ul>
             </div>
             <div class="col-sm-4">
-                <hr class="invisible visible-xs" />
                 <ul class="gp">
                     <li><a href="#">Download & Installation</a></li>
                     <li><a href="#">Home</a></li>
@@ -280,8 +282,53 @@
 
                 </ul>
             </div>
+                </div>
+
+                <!--<f:format.raw>{navFooter}</f:format.raw>-->
+                <f:comment>
+                    <div class="col-sm-4">
+                <ul class="gp">
+                    <li><a href="#">Elemente & Bedienung</a></li>
+                    <li><a href="#">Überschriften und seiteninterne Navigation</a></li>
+                    <li>
+                        <a href="#">Dropdown</a>
+                        <ul>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li>
+                                <a href="#">Dropdown</a>
+                                <ul>
+                                    <li><a href="#">Action</a></li>
+                                </ul>
+                            <li>
+                        </ul>
+                    <li>
+
+                    <li><a href="#">Elemente & Bedienung</a></li>
+                    <li><a href="#">Überschriften und seiteninterne Navigation</a></li>
+                    <li><a href="#">Listen</a></li>
+
+                </ul>
+            </div>
             <div class="col-sm-4">
-                <hr class="invisible visible-xs" />
+                <ul class="gp">
+                    <li><a href="#">Download & Installation</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Das Government Package</a></li>
+
+                </ul>
+            </div>
+                </div>
+                </f:comment>
+
+
+
+
+
+
+
+
+            <div class="col-sm-4">
 
                 <f:format.raw>{footerLogo}</f:format.raw>
                 <f:comment>
