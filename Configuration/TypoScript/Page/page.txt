@@ -92,7 +92,7 @@ page {
 
       # Insert content as already constructed in TypoScript objects into subparts
       #content-left-output < lib.contentleft
-      contentColumn < lib.content
+      #content-column < lib.content
       #content-right < lib.contentright
   	}
   }
