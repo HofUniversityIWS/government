@@ -61,6 +61,7 @@ config {
 
     // Link settings
     absRefPrefix            = /
+    absRefPrefix.data = getindpenv:TYPO3_SITE_PATH
     prefixLocalAnchors      = all
 
     // Remove targets from links
