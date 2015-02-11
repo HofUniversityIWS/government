@@ -255,8 +255,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../Fonts/glyphicons-halflings-regular.eot');
+  src: url('../Fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../Fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../Fonts/glyphicons-halflings-regular.woff') format('woff'), url('../Fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../Fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6786,9 +6786,6 @@ old:
 footer {
   background: -moz-linear-gradient(center top, #232323 0%, #414141 180px) !important;
   padding: 50px 0px;
-}
-footer img {
-  opacity: .5;
 }
 footer .copyright {
   padding-top: 30px;
