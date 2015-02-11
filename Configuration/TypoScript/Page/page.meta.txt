@@ -12,4 +12,7 @@ page.meta {
 
     robots = {$page.meta.robots}
     revisit-after = {$page.meta.revisit} days
+    viewport = {$page.meta.viewport}
+    X-UA-Compatible = {$page.meta.X-UA-Compatible}
+
 }

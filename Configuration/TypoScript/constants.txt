@@ -120,6 +120,11 @@ page.meta {
     # cat=page.meta; type=int+; label= Revisit after: Number of days between search engine visits.
     revisit = 7
 
+    # cat=page.meta; type=string; label= Viewport: Screen layout opportunities for touch devices.
+    viewport = width=device-width, initial-scale=1.0
+
+    # cat=page.meta; type=string; label=  X-UA-Compatible: Mode of internet explorer compatibility.
+    X-UA-Compatible = IE=edge
 
     # The meta tags below are not used on this website, if you want to use these, you can configure that in TypoScript template Page/page.meta
 
