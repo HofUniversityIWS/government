@@ -1,9 +1,18 @@
-# add the title tag and the necessary classes to the anchor
+styles.content.imgtext.linkWrap.lightboxEnabled = 1
+styles.content.imgtext.linkWrap.lightboxCssClass = t3colorbox
+
+// images in content elements
 tt_content.image.20.1.imageLinkWrap {
   JSwindow = 0
   directImageLink = 1
-  titleInLinkAndImg = 1
-  linkParams.ATagParams.dataWrap = class="lightbox" rel="lightbox{field:uid}" title="{field:titleText}"
+  linkParams.ATagParams.dataWrap = class="t3colorbox" data-rel="cbox{field:uid}"
+}
+
+// images in RTE
+lib.parseFunc_RTE.tags.img.postUserFunc.imageLinkWrap {
+  JSwindow = 0
+  directImageLink = 1
+  linkParams.ATagParams.dataWrap = class="t3colorbox" data-rel="cbox{field:uid}"
 }
 
 # add the title tag and the necessary classes to the anchor for "click-enlarge"
@@ -25,21 +34,4 @@ plugin.tt_news.displaySingle.image.imageLinkWrap {
 
   height =
   width =
-}
-
-styles.content.imgtext.linkWrap.lightboxEnabled = 1
-styles.content.imgtext.linkWrap.lightboxCssClass = t3colorbox
-
-// images in content elements
-tt_content.image.20.1.imageLinkWrap {
-  JSwindow = 0
-  directImageLink = 1
-  linkParams.ATagParams.dataWrap = class="t3colorbox" data-rel="cbox{field:uid}"
-}
-
-// images in RTE
-lib.parseFunc_RTE.tags.img.postUserFunc.imageLinkWrap {
-  JSwindow = 0
-  directImageLink = 1
-  linkParams.ATagParams.dataWrap = class="t3colorbox" data-rel="cbox{field:uid}"
 }
