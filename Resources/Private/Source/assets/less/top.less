@@ -33,14 +33,10 @@
     }
   }
 
-
-
-
   button {
     background: none;
     border: none;
   }
-
   ul.visible-xs li {
     float:right;
     &:first-child {
@@ -57,10 +53,13 @@
 
 header {
   text-align: center;
-  color: #bad7f8;
-  color: #5d93cc;
-
+  background-color: #5d93cc;
+  background: -webkit-gradient(center top, @gp_brand_primary 0%, lighten(@gp_brand_primary, 50%) 0%, lighten(@gp_brand_primary, 20%) 100%);
+  background: -webkit-linear-gradient(center top, @gp_brand_primary 0%, lighten(@gp_brand_primary, 50%) 0%, lighten(@gp_brand_primary, 20%) 100%);
   background: -moz-linear-gradient(center top, @gp_brand_primary 0%, lighten(@gp_brand_primary, 50%) 0%, lighten(@gp_brand_primary, 20%) 100%);
+  background: -ms-linear-gradient(center top, @gp_brand_primary 0%, lighten(@gp_brand_primary, 50%) 0%, lighten(@gp_brand_primary, 20%) 100%);
+  background: -o-linear-gradient(center top, @gp_brand_primary 0%, lighten(@gp_brand_primary, 50%) 0%, lighten(@gp_brand_primary, 20%) 100%);
+
   .row {
     height: 180px;
     padding: 30px;

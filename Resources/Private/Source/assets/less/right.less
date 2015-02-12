@@ -5,9 +5,11 @@
   }
 
 .csc-header {
-  background: -moz-linear-gradient(center top , #a7a7a7 0%, #666 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
-  padding:3px 10px;
-
+  padding:1px 10px;
+  background-color: white;
+  h2 {
+    color:@gp_font_color;
+  }
   h4 {
     font-size: 1em;
     color:white;
@@ -35,10 +37,22 @@
   .panel.panel-default {
     padding-bottom: 1px;
 
-    h4 {
-      a {
-        color:white;
+    h2 {
+      font-size: 1.3em;
+    }
+
+    .box {
+      background-color: #f7f7f7;
+      h4 {
       }
+      a {
+        //color:white;
+      }
+    }
+
+    figure img {
+      margin-top:10px;
+      margin-right:10px;
     }
   }
 }

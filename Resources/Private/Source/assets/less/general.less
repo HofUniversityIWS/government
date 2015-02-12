@@ -1,6 +1,11 @@
 body, html {
   background-color: @gp_background_outer;
-  font-size: .9em;
+  font-size: .85em;
+  font-family: Verdana,Geneva,sans-serif;
+}
+
+h1,h2,h3,h4,p {
+  line-height: 1.8em;
 }
 
 .sr-hint {
@@ -73,12 +78,22 @@ ul.gp {
 }
 
 .panel-default {
-  background-color: #f7f7f7;
   border-radius:0px;
   border: none;
+  box-shadow: none;
+
+  h2 {
+    color:red;
+  }
+
+  .box .csc-header {
+    .gp_gradient(#a7a7a7, #666);
+  }
+  .csc-textpic {
+    background-color: #f7f7f7;
+  }
 
   .panel-heading {
-    background: -moz-linear-gradient(center top , #a7a7a7 0%, #666 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
     color:white;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
