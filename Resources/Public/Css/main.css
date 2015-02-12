@@ -6668,7 +6668,7 @@ ul.gp > li > a:before {
   line-height: 1em;
 }
 .row.top li a {
-  font-size: .8em;
+  font-size: 0.9em;
   color: #555555;
 }
 .row.top li:last-child {
@@ -6746,6 +6746,8 @@ ol.breadcrumb li:before {
   font-size: .7em;
   color: #888888;
   content: "\e072";
+  line-height: 1.5em;
+  vertical-align: text-top;
 }
 ol.breadcrumb li:first-child:before {
   content: "";
