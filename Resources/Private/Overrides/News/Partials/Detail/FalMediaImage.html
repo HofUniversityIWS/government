@@ -15,3 +15,9 @@
 		{mediaElement.originalResource.description}
 	</p>
 </f:if>
+
+<f:if condition="{mediaElement.originalResource.link}">
+	<p class="news-img-link">
+		Link: <f:link.page>{mediaElement.originalResource.link}</f:link.page>
+	</p>
+</f:if>

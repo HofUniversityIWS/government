@@ -25,16 +25,28 @@
 				</f:if>
 				<f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
 			</n:format.nothing>
+			
+			<article>
+			
+			<!-- date -->
+			<div class="news-list-date">
+						<n:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</n:format.date>
+					</div>
+			
 			<div class="header">
-				<h3>{newsItem.title}</h3>
+				<h1>{newsItem.title}</h1>
 			</div>
+			
+			<f:if condition="{newsItem.teaser}">
+				<!-- teaser -->
+				<div class="teaser-text">
+					<h2>{newsItem.teaser}</h2>
+				</div>
+			</f:if>
+			
 			<div class="footer">
 				<p>
-					<!-- date -->
-					<span class="news-list-date">
-						<n:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</n:format.date>
-					</span>
-
+					
 					<f:if condition="{newsItem.categories}">
 						<f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
 					</f:if>
@@ -57,15 +69,9 @@
 				</p>
 			</div>
 
-			<f:if condition="{newsItem.teaser}">
-				<!-- teaser -->
-				<div class="teaser-text">
-					<f:format.html>{newsItem.teaser}</f:format.html>
-				</div>
-			</f:if>
-
 			<f:if condition="{newsItem.contentElements}">
 				<!-- content elements -->
+				
 				<f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
 			</f:if>
 
@@ -73,9 +79,11 @@
 			<f:render partial="Detail/MediaContainer" arguments="{media: newsItem.media, settings:settings}" />
 
 			<!-- main text -->
+			
 			<div class="news-text-wrap">
 				<f:format.html>{newsItem.bodytext}</f:format.html>
 			</div>
+			</article>
 
 			<f:if condition="{settings.backPid}">
 				<!-- Link Back -->
@@ -144,6 +152,7 @@
 											</f:if>
 										</n:format.fileDownload>
 									</span>
+									
 									<span class="news-related-files-size">
 										<n:format.fileSize file="uploads/tx_news/{relatedFile.file}" format="{settings.relatedFiles.fileSizeLabels}" />
 									</span>
@@ -156,13 +165,13 @@
 				<f:if condition="{newsItem.falRelatedFiles}">
 					<!-- FAL related files -->
 					<div class="news-related news-related-files">
-						<h4>
+						<h3>
 							<f:translate key="related-files" />
-						</h4>
+						</h3>
 						<ul>
 							<f:for each="{newsItem.falRelatedFiles}" as="relatedFile">
 								<li>
-									<span class="news-related-files-link">
+									<div class="news-related-files-link">
 										<n:format.fileDownload file="{relatedFile.originalResource.publicUrl}" configuration="{settings.relatedFiles.download}">
 											<f:if condition="{relatedFile.originalResource.title}">
 												<f:then>
@@ -173,7 +182,8 @@
 												</f:else>
 											</f:if>
 										</n:format.fileDownload>
-									</span>
+									</div>
+									
 									<span class="news-related-files-size">
 										<n:format.fileSize fileSize="{relatedFile.originalResource.size}" format="{settings.relatedFiles.fileSizeLabels}" />
 									</span>
