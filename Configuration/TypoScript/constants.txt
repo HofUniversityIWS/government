@@ -20,6 +20,7 @@
 # customsubcategory=160=A21glossary
 # customsubcategory=170=Indexed Search
 # customsubcategory=180=Auto Make Template
+# customsubcategory=190=T3colorbox
 
 config {
     # cat=government package/150/100; type=boolean; label=Admin Panel: Turn on admin panel (mainly for testing purposes only)
@@ -74,6 +75,11 @@ a21glossary {
     glossaryPage = 28
     # cat=government package/160/110; type=int+; label= A21glossary - Storage Page source UID: Page ID of the glossary storage page.
     storagePage = 28
+}
+
+plugin.t3colorbox{
+    # cat=government package/190/100; type=boolean; label= T3Colorbox - Include jQuery core: Add jQuery core script. Turn it off (0), if you use t3jquery or jQuery is already added.
+    includejquerycore = 0
 }
 
 page.meta {
