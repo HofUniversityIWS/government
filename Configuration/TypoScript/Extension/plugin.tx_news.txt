@@ -2,6 +2,17 @@ plugin.tx_news {
 	settings {
 		detail {
 			showSocialShareButtons = 0
+			media.image {
+				maxWidth = 200
+				maxHeight = 150
+			}
+		}
+		list {
+			paginate.itemsPerPage = 3
+			media.image {
+				maxWidth = 200
+				maxHeight = 150
+			}
 		}
 	}
 	view {
