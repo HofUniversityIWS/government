@@ -6702,19 +6702,31 @@ ul.gp > li > a:before {
 }
 header {
   text-align: center;
-  background-color: #5d93cc;
-  background: -webkit-gradient(center top, #1e5799 0%, #c3d9f3 0%, #4389da 100%);
-  background: -webkit-linear-gradient(center top, #1e5799 0%, #c3d9f3 0%, #4389da 100%);
-  background: -moz-linear-gradient(center top, #1e5799 0%, #c3d9f3 0%, #4389da 100%);
-  background: -ms-linear-gradient(center top, #1e5799 0%, #c3d9f3 0%, #4389da 100%);
-  background: -o-linear-gradient(center top, #1e5799 0%, #c3d9f3 0%, #4389da 100%);
+  background: #1e5799;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1e5799 0%, #bad7f8 0%, #5d93cc 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1e5799), color-stop(0%, #bad7f8), color-stop(100%, #5d93cc));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #1e5799 0%, #bad7f8 0%, #5d93cc 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #1e5799 0%, #bad7f8 0%, #5d93cc 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #1e5799 0%, #bad7f8 0%, #5d93cc 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #1e5799 0%, #bad7f8 0%, #5d93cc 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from', endColorstr='@to', GradientType=0);
+  /* IE6-9 */
+  min-height: 10.75em;
+  clear: both;
 }
 header .row {
   height: 15em;
   padding: 2.5em;
   background-image: url("../Images/logo-typo3-symbol-transparent.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 95% 1.6em;
 }
 ol.breadcrumb {
   margin-top: 2em;
