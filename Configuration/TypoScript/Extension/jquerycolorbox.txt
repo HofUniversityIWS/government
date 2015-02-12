@@ -1,12 +1,3 @@
-# put the inclusions in the footer
-page.includeJSlibs.jquery >
-page.includeJS.lightbox >
-page.includeJS.lightboxMain >
-
-page.includeJSFooterlibs.jquery = EXT:jquerycolorbox/res/js/jquery.js
-page.includeJSFooter.lightbox = EXT:jquerycolorbox/res/js/jquery.colorbox-min.js
-page.includeJSFooter.lightboxMain = EXT:jquerycolorbox/res/js/main.js
-
 # add the title tag and the necessary classes to the anchor
 tt_content.image.20.1.imageLinkWrap {
   JSwindow = 0
@@ -34,4 +25,21 @@ plugin.tt_news.displaySingle.image.imageLinkWrap {
 
   height =
   width =
+}
+
+styles.content.imgtext.linkWrap.lightboxEnabled = 1
+styles.content.imgtext.linkWrap.lightboxCssClass = t3colorbox
+
+// images in content elements
+tt_content.image.20.1.imageLinkWrap {
+  JSwindow = 0
+  directImageLink = 1
+  linkParams.ATagParams.dataWrap = class="t3colorbox" data-rel="cbox{field:uid}"
+}
+
+// images in RTE
+lib.parseFunc_RTE.tags.img.postUserFunc.imageLinkWrap {
+  JSwindow = 0
+  directImageLink = 1
+  linkParams.ATagParams.dataWrap = class="t3colorbox" data-rel="cbox{field:uid}"
 }
