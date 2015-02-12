@@ -2,20 +2,16 @@
 	=====================
 		Partials/List/Item.html
 -->
-	<n:excludeDisplayedNews newsItem="{newsItem}" />
-	
-<li class="list-group-item">
-	<span class="news-list-date">
-		<n:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</n:format.date>
-	</span>	
+	<n:excludeDisplayedNews newsItem="{newsItem}" />	
+
+<f:if condition="{settings.templateLayout} == 'aside'">
+<f:then>
 	<h4>
 		<n:link newsItem="{newsItem}" settings="{settings}">
 			{newsItem.title}
 		</n:link>
 	</h4>
-
-<f:if condition="{settings.templateLayout} == 'aside'">
-<f:then>
+	
 	<!-- teas=ser text -->
 	<div class="teaser-text">
 		<f:if condition="{newsItem.teaser}">
@@ -33,6 +29,16 @@
 	</div>
 </f:then>
 <f:else>
+<li class="list-group-item">
+	<span class="news-list-date">
+		<n:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</n:format.date>
+	</span>	
+	
+	<h4>
+		<n:link newsItem="{newsItem}" settings="{settings}">
+			{newsItem.title}
+		</n:link>
+	</h4>
 
 	<f:if condition="{newsItem.falMedia}">
 		<f:then>
