@@ -14,6 +14,8 @@ namespace TYPO3\Government;
  * The TYPO3 project - inspiring people to share!
  */
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 /**
  * Class Bootstrap
  * @package TYPO3\Government
@@ -21,6 +23,7 @@ namespace TYPO3\Government;
 class Bootstrap {
 
 	const PACKAGE_Key = 'government';
+	const PACKAGE_Title = 'TYPO3 CMS Government Package';
 
 	/**
 	 * Initializes configuration and hooks.
@@ -30,6 +33,19 @@ class Bootstrap {
 	static public function initialize() {
 		$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['configArrayPostProc'][static::PACKAGE_Key] =
 			'TYPO3\\Government\\Hook\\FrontendHook->stdWrapAbsRefPrefix';
+	}
+
+	/**
+	 * Initializes extension settings.
+	 *
+	 * @return void
+	 */
+	static public function initializeExtension() {
+		ExtensionManagementUtility::addStaticFile(
+			static::PACKAGE_Key,
+			'Configuration/TypoScript/',
+			static::PACKAGE_Title
+		);
 	}
 
 }
