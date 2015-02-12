@@ -3,13 +3,16 @@
 		Partials/List/Item.html
 -->
 	<n:excludeDisplayedNews newsItem="{newsItem}" />
-
+	
 <li class="list-group-item">
-		<h4>
-			<n:link newsItem="{newsItem}" settings="{settings}">
-				{newsItem.title}
-			</n:link>
-		</h4>
+	<span class="news-list-date">
+		<n:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</n:format.date>
+	</span>	
+	<h4>
+		<n:link newsItem="{newsItem}" settings="{settings}">
+			{newsItem.title}
+		</n:link>
+	</h4>
 
 <f:if condition="{settings.templateLayout} == 'aside'">
 <f:then>
@@ -112,7 +115,6 @@
 		</f:else>
 	</f:if>
 
-
 	<!-- teaser text -->
 	<div class="teaser-text">
 		<f:if condition="{newsItem.teaser}">
@@ -132,10 +134,6 @@
 	<!-- footer information -->
 	<div class="footer">
 		<p>
-			<span class="news-list-date">
-				<n:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</n:format.date>
-			</span>
-
 			<f:if condition="{newsItem.firstCategory}">
 				<span class="news-list-category">{newsItem.firstCategory.title}</span>
 			</f:if>
