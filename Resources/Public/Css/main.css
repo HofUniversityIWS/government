@@ -7036,15 +7036,14 @@ old:
 .mid-col .news.news-single .outer {
   float: right;
 }
-.mid-col .news.news-single .outer img {
+.mid-col .news.news-single .outer .mediaelement img {
   display: block;
+  border: none;
 }
 .mid-col .news.news-single .outer p.news-img-caption a,
 .mid-col .news.news-single .outer p.news-img-link a {
   display: inline-block;
   float: none;
-}
-.mid-col .news-related.news-related-links {
   border: none;
 }
 .mid-col .page-navigation ul.f3-widget-paginator {
