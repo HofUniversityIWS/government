@@ -1,8 +1,6 @@
 # Include static Templates
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/setup.txt">
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/settings/setup.txt">
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/defaultmailform/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:indexed_search/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:menu_balancer/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:contrast/Configuration/TypoScript/setup.txt">
@@ -24,7 +22,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.felogin.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.indexed_search.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.tx_news.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.wt_spamshield.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/jquerycolorbox.txt">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Navigation/menu.defaults.txt">

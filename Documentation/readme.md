@@ -19,16 +19,6 @@ For the extension indexed search, the documentation is delivered in a separated 
 
 
 
-### Configuration/TypoScript plugin.wt_spamshield ###
-
-The wt_spamshield template
-
-This template enables the wt_spamshield extension for the standard mailform
-
-For a full description of the configuration options, check the manual of this extension. Extension manuals are normally included in the extensions as Open Office documents, and can be accessed directly from the module Ext Manager in the TYPO3 backend (select the option 'loaded extensions or install extension'.
-
-
-
 ### Configuration/TypoScript menu.language ####
 
 The LANGUAGE menu
