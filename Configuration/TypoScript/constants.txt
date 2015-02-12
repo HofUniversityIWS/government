@@ -50,6 +50,7 @@ filepaths {
 
 contrast.stylesheet = fileadmin/default/templates/css/contrast.css
 
+# hasPageId:menu.
 menu {
     # cat=government package/110/100; type=string; label= Top-menu pages: Comma separated list of page id's to be included in top-left menu.
     top.pages = 232
@@ -58,11 +59,14 @@ menu {
     help.pages = 238
 }
 
+# hasPageId:plugin.tx_indexedsearch.
 plugin.tx_indexedsearch {
+    # isPageId:menu.top.pages
     # cat=government package/170/100; type=int+; label= Indexed Search - Search Page ID: UID of the page which contains the indexed search plugin.
     searchpageID = 241
 }
 
+# hasPageId:a21glossary.
 a21glossary {
     # cat=government package/160/100; type=int+; label= A21glossary - Glossary Page source UID: Page ID of the glossary page.
     glossaryPage = 28
@@ -139,15 +143,19 @@ content.wrap.header3 = <h3> | </h3>
 content.wrap.header4 = <h4> | </h4>
 
 contentpage {
+    # hasPageId:contentpage.logoPID
     # cat=government package/140/100; type=int+; label= Logo source PID: Parent ID of the logo record used on content pages.
     logoPID = 244
 
+    # hasPageId:contentpage.footerPID
     # cat=government package/140/110; type=int+; label= Footer source PID: Parent ID of the footer record used on content pages.
     footerPID = 243
 
+    # hasPageId:contentpage.copyrightPID
     # cat=government package/140/120; type=int+; label= Copyright source PID: Parent ID of the copyright record used on content pages.
     copyrightPID = 242
 
+    # hasPageId:contentpage.homeID
     # cat=government package/140/130; type=int+; label= ID of the home page: ID of the home (root) page of the site.
     homeID = 1
 

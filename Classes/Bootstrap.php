@@ -33,6 +33,8 @@ class Bootstrap {
 	static public function initialize() {
 		$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['configArrayPostProc'][static::PACKAGE_Key] =
 			'TYPO3\\Government\\Hook\\FrontendHook->stdWrapAbsRefPrefix';
+		$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/impexp/class.tx_impexp.php']['after_setRelations'][static::PACKAGE_Key] =
+			'TYPO3\\Government\\Hook\\ImportHook->updateMapping';
 	}
 
 	/**
