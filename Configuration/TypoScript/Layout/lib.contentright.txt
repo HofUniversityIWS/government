@@ -11,7 +11,7 @@ lib.contentright {
         select.where = colPos = 1
         select.languageField = sys_language_uid
 
-        renderObj.stdWrap.dataWrap = <article>|</article>
+        renderObj.stdWrap.dataWrap = <div class="panel panel-default">|</div><hr>
 
         slide = -1
 

@@ -8,7 +8,7 @@ lib.content {
         select.where = colPos = 0
         select.languageField = sys_language_uid
 
-        renderObj.stdWrap.dataWrap = <article id="c{field:uid}">|</article>
+        renderObj.stdWrap.dataWrap = <article>|</article><hr>
         stdWrap.prepend =< lib.srHint
         stdWrap.prepend.data = LLL:{$filepaths.l10n}:desc_content
     }
@@ -18,11 +18,15 @@ lib.content {
     20 {
         10 = TEXT
         10.data = lll:EXT:css_styled_content/pi1/locallang.xml:label.toTop
-        10.wrap = <a class="to-top" href="#">|</a>
+        10.wrap = <a class="to-top" href="#" id="to-top"><i class="glyphicon glyphicon-chevron-up"> </i> |</a>
         20 = TEXT
-        20.value = <a class="print" href="Javascript:window.print();">Drucken</a>
-        wrap = <div class="content-column-bottom no-print">|</div>
+        20.value = <a class="print" href="Javascript:window.print();" id="print"><i class="glyphicon glyphicon-print"> </i> Drucken</a>
+        wrap = <div class="options">|</div>
     }
+
+
+
+
 
     # Wrap it in the markers for the search engine, so it knows that this part has to be indexed
     wrap = <!--TYPO3SEARCH_begin--><section> | </section><!--TYPO3SEARCH_end-->

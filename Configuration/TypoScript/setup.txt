@@ -5,7 +5,7 @@
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/settings/setup.txt">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/defaultmailform/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:indexed_search/Configuration/TypoScript/setup.txt">
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:menu_balancer/Configuration/TypoScript/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:menu_balancer/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:contrast/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:form/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:a21glossary/Configuration/TypoScript/Accessibility/setup.txt">

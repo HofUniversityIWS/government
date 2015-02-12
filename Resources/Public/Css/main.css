@@ -255,8 +255,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('../components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../Fonts/glyphicons-halflings-regular.eot');
+  src: url('../Fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../Fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../Fonts/glyphicons-halflings-regular.woff') format('woff'), url('../Fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../Fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6534,6 +6534,11 @@ html {
   background-color: #eeeeee;
   font-size: .9em;
 }
+.sr-hint {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
 .container {
   color: #555555;
 }
@@ -6561,6 +6566,10 @@ h3,
 h4 {
   font-size: 1.1em;
   font-weight: bold;
+}
+figure figcaption {
+  font-size: .85em;
+  padding-top: .5em;
 }
 ul.gp {
   padding-left: 0px;
@@ -6634,8 +6643,17 @@ ul.gp > li > a:before {
 .row.top li:last-child {
   border-right: none;
 }
-.row.top .text-right li:nth-last-child(2) {
+.row.top .text-right ul {
+  display: inline;
+}
+.row.top .text-right ul li:last-child {
   border: none;
+}
+.row.top .text-right form {
+  display: inline;
+}
+.row.top .text-right form input {
+  height: 20px;
 }
 .row.top button {
   background: none;
@@ -6660,7 +6678,7 @@ header {
 header .row {
   height: 180px;
   padding: 30px;
-  background-image: url("../img/logo-typo3-symbol-transparent.png");
+  background-image: url("../Images/logo-typo3-symbol-transparent.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -6753,6 +6771,9 @@ old:
 .left-col nav.navbar.navbar-default ul.nav li:hover > a {
   background-color: red;
 }
+.left-col .panel.panel-default h4.csc-firstHeader {
+  background-color: white;
+}
 .mid-col .options {
   margin-bottom: 30px;
 }
@@ -6769,7 +6790,40 @@ old:
 .mid-col .options #print i {
   color: #555555;
 }
-.right-col .list-group-item:before {
+.mid-col div.csc-textpic-center-outer {
+  float: none;
+  position: inherit;
+  right: auto;
+}
+.mid-col div.csc-textpic-center-outer .csc-textpic-center-inner {
+  float: none;
+  position: inherit;
+  right: auto;
+}
+.right-col .csc-header {
+  background: -moz-linear-gradient(center top, #a7a7a7 0%, #666666 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 3px 10px;
+}
+.right-col .csc-header h4 {
+  font-size: 1em;
+  color: white;
+  font-weight: normal;
+}
+.right-col p {
+  margin: 15px;
+}
+.right-col ul {
+  list-style-type: none;
+  padding: 0px;
+  padding-left: 5px;
+}
+.right-col ul li {
+  display: block;
+  margin-bottom: -1px;
+  padding: 10px 5px;
+  line-height: 1.3em;
+}
+.right-col ul li:before {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -6782,13 +6836,22 @@ old:
   font-size: .7em;
   color: #888888;
   content: "\e075";
+  margin-right: 3px;
+}
+.right-col .panel.panel-default {
+  padding-bottom: 1px;
+}
+.right-col .panel.panel-default h4 a {
+  color: white;
 }
 footer {
   background: -moz-linear-gradient(center top, #232323 0%, #414141 180px) !important;
-  padding: 50px 0px;
+  padding: 3em 0px;
 }
-footer img {
-  opacity: .5;
+@media (max-width: 768px) {
+  footer img {
+    margin-top: 2.3em;
+  }
 }
 footer .copyright {
   padding-top: 30px;

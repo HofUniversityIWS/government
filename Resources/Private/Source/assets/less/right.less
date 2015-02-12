@@ -1,4 +1,45 @@
-.right-col .list-group-item:before {
-  .glyphicon_before();
-  content: "\e075";
+.right-col {
+
+  .box {
+    //padding:15px;
+  }
+
+.csc-header {
+  background: -moz-linear-gradient(center top , #a7a7a7 0%, #666 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding:3px 10px;
+
+  h4 {
+    font-size: 1em;
+    color:white;
+    font-weight: normal;
+  }
 }
+  p {margin:15px;}
+  ul {
+    list-style-type: none;
+    padding:0px;
+    padding-left: 5px;
+    li {
+      display: block;
+      margin-bottom: -1px;
+      padding: 10px 5px;
+      line-height: 1.3em;
+    }
+
+    li:before {
+      .glyphicon_before();
+      content: "\e075";
+      margin-right: 3px;
+    }
+  }
+  .panel.panel-default {
+    padding-bottom: 1px;
+
+    h4 {
+      a {
+        color:white;
+      }
+    }
+  }
+}
+

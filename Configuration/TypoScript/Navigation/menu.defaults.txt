@@ -43,15 +43,15 @@ menu.defaults {
     ACT = 1
     ACT < .NO
     ACT {
-      ATagParams = class="active"
+###      ATagParams = class="active"
     }
 
     # Copy properties of normal to current state, and then add a CSS class for styling
     CUR = 1
     CUR < .NO
     CUR {
-      ATagParams = class="selected"
-      #wrapItemAndSub = <li class="selected">|</li>
+###      ATagParams = class="selected"
+      wrapItemAndSub = <li class="active">|</li>
     }
 
     CURIFSUB < .IFSUB

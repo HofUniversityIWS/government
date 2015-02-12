@@ -16,7 +16,7 @@ lib.searchbox {
         parameter = {$plugin.tx_indexedsearch.searchpageID}
         returnLast = url
     }
-    10.wrap = <form action="|" method="post" id="indexedsearch"><fieldset>
+    10.wrap = <form action="|" method="post" id="indexedsearch" class="hidden-xs">
     20 = COA
     20 {
         10 = TEXT
@@ -26,7 +26,7 @@ lib.searchbox {
         20 = COA
         20 {
             10 = TEXT
-            10.value = <button class="search" title="Search" type="submit" id="inputButton">Suchen</button>
+            10.value = <button title="Search" type="submit" class="glyphicon glyphicon-search"></button>
             20 = TEXT
             20.value = <input type="hidden" name="tx_indexedsearch_pi2[action]" value="search" />
             30 = TEXT
@@ -38,5 +38,5 @@ lib.searchbox {
         }
     }
 
-    wrap = |</fieldset></form>
+    wrap = |</form>
 }
