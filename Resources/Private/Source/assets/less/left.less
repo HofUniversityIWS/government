@@ -10,13 +10,26 @@
         }
       }
     }
+
+
+
+
+
     background: none;
     border: none;
     .navbar-collapse {
+      padding:0px;
       border:none;
     }
     ul.nav {
+      margin: 0px;
       width:100%;
+
+      @media (min-width:768px) {
+        padding-left:15px;
+        padding-right:15px;
+      }
+
       li {
         float:none;
         border-bottom:1px solid #ddd;
