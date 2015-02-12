@@ -6575,6 +6575,15 @@ h4 {
   font-size: 1.1em;
   font-weight: bold;
 }
+#cboxOverlay {
+  background: none;
+  background-color: #080808;
+}
+img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
 figure figcaption {
   font-size: .85em;
   padding-top: .5em;
@@ -6978,6 +6987,11 @@ old:
 .mid-col .tx-felogin-pi1 form .csc-form-login.csc-form-submit {
   padding-left: 11.7em;
   padding-top: .5em;
+}
+.mid-col li.list-group-item {
+  border: none;
+  padding: 0px;
+  padding-top: 2em;
 }
 .right-col .csc-header {
   padding: 1px 10px;
