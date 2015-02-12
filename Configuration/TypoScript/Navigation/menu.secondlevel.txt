@@ -16,12 +16,12 @@ menu.secondlevel {
         # After that we add our modified configuration for menu.secondlevel
         ACT {
             ATagParams >
-            wrapItemAndSub = <li class="active">|</li>
+            wrapItemAndSub = <li class="active-unfolded">|</li>
         }
 
         CUR {
             ATagParams >
-            wrapItemAndSub = <li class="selected">|</li>
+            wrapItemAndSub = <li class="active">|</li>
         }
 
     }

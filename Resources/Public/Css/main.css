@@ -6542,6 +6542,9 @@ h4,
 p {
   line-height: 1.8em;
 }
+a:focus {
+  outline: medium dotted;
+}
 .sr-hint {
   position: absolute;
   left: -9999px;
@@ -6588,28 +6591,49 @@ figure figcaption {
   font-size: .85em;
   padding-top: .5em;
 }
-ul.gp {
+.left-col .navbar-default ul.gp {
+  font-size: 0.95em;
   padding-left: 0px;
 }
-ul.gp li {
+.left-col .navbar-default ul.gp li {
   padding: 0px;
   margin-top: 12px;
+  border-bottom: none !important;
 }
-ul.gp > li {
+.left-col .navbar-default ul.gp li > a {
+  color: #111;
+}
+.left-col .navbar-default ul.gp li a {
+  position: relative;
+  display: block;
+  line-height: 1.45em !important;
+  padding: 0.75em 0.625em 0.75em 1.7em !important;
+}
+.left-col .navbar-default ul.gp li {
   font-weight: bold;
   list-style-type: none;
 }
-ul.gp > li a {
-  color: #b1b1b1;
+.left-col .navbar-default ul.gp li a {
+  color: #555;
+  padding-left: 2.3em !important;
 }
-ul.gp > li ul {
+.left-col .navbar-default ul.gp li.active-unfolded ul {
   list-style-type: none;
-  padding-left: 2.3em;
+  padding-left: 0;
 }
-ul.gp > li ul li {
+.left-col .navbar-default ul.gp li.active-unfolded ul li {
   font-weight: normal;
 }
-ul.gp > li > a:before {
+.left-col .navbar-default ul.gp li.active-unfolded li.active-unfolded > a {
+  background-color: #f1f1f1;
+}
+.left-col .navbar-default ul.gp li.active-unfolded li.active-unfolded ul a {
+  padding-left: 3.3em !important;
+}
+.left-col .navbar-default ul.gp > li > a {
+  padding-left: 20px !important;
+}
+.left-col .navbar-default ul.gp li.subpages > a:before {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -6621,16 +6645,47 @@ ul.gp > li > a:before {
   -moz-osx-font-smoothing: grayscale;
   font-size: .7em;
   color: #888888;
-  content: "\e072";
-  margin-right: 5px;
+  position: absolute;
+  top: 1.7em;
+  content: "\e250";
+  margin-left: -15px;
+  color: #B3B3B3;
+}
+ul.nav li a {
+  padding: 0px;
+  line-height: 3em;
+}
+ul.nav li.active > a,
+ul.nav li:hover > a {
+  background-color: #f1f1f1 ;
+  color: #000000;
+}
+ul.nav li.active-unfolded:hover > a {
+  background-color: transparent;
+  color: inherit;
+}
+ul.nav li.active-unfolded > a:before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: .7em;
+  color: #888888;
+  position: absolute;
+  top: 1.7em;
+  content: "\e252";
+  margin-left: -15px;
+  color: #B3B3B3;
 }
 .panel-default {
   border-radius: 0px;
   border: none;
   box-shadow: none;
-}
-.panel-default h2 {
-  color: red;
 }
 .panel-default .box .csc-header {
   background-color: #a7a7a7;
@@ -6818,14 +6873,6 @@ old:
 }
 .left-col nav.navbar.navbar-default ul.nav > li:first-child {
   border-top: 1px solid #ddd;
-}
-.left-col nav.navbar.navbar-default ul.nav li a {
-  padding: 0px;
-  line-height: 3em;
-}
-.left-col nav.navbar.navbar-default ul.nav li.active > a,
-.left-col nav.navbar.navbar-default ul.nav li:hover > a {
-  background-color: red;
 }
 .left-col .panel.panel-default h4.csc-firstHeader {
   background-color: white;

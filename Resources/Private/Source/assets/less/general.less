@@ -8,6 +8,10 @@ h1,h2,h3,h4,p {
   line-height: 1.8em;
 }
 
+a:focus {
+  outline: medium dotted;
+}
+
 .sr-hint {
   position:absolute;
   left:-9999px;
@@ -64,28 +68,83 @@ figure {
   }
 }
 
-
-ul.gp {
-  padding-left:0px;
-  li {padding:0px; margin-top:12px;}
-  >li {
-    font-weight: bold;
-    list-style-type: none;
-    a {
-      color: #b1b1b1;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 2.3em;
-      li {
-        font-weight: normal;
+.left-col .navbar-default {
+  ul.gp {
+    font-size: 0.95em;
+    padding-left: 0px;
+    li {
+      padding: 0px;
+      margin-top: 12px;
+      border-bottom: none !important;
+      & > a {
+        color: #111;
+      }
+      a{
+        position: relative;
+        display: block;
+        line-height: 1.45em !important;
+        padding: 0.75em 0.625em 0.75em 1.7em !important;
       }
     }
+    li {
+      font-weight: bold;
+      list-style-type: none;
+      a {
+        color: #555;
+        padding-left: 2.3em !important;
+      }
+    }
+    li.active-unfolded{
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        li {
+          font-weight: normal;
+        }
+      }
+      li.active-unfolded {
+        & > a {
+          background-color: #f1f1f1;
+        }
+        ul a {
+          padding-left: 3.3em !important;
+        }
+      }
+    }
+    & > li > a{
+      padding-left: 20px !important;
+    }
+    li.subpages > a:before {
+      .glyphicon_before();
+      position: absolute;
+      top: 1.7em;
+      content: "\e250";
+      margin-left: -15px;
+      color: #B3B3B3;
+    }
   }
-  &>li>a:before{
+}
+
+ul.nav  {
+  li a {
+    padding:0px;
+    line-height:3em;
+  }
+  li.active>a, li:hover>a {
+    background-color: #f1f1f1 ;
+    color: #000000;
+  }
+  li.active-unfolded:hover>a{
+    background-color: transparent;
+    color: inherit;
+  }
+  li.active-unfolded > a:before{
     .glyphicon_before();
-    content: "\e072";
-    margin-right:5px;
+    position: absolute;
+    top: 1.7em;
+    content: "\e252";
+    margin-left: -15px;
+    color: #B3B3B3;
   }
 }
 
@@ -93,10 +152,6 @@ ul.gp {
   border-radius:0px;
   border: none;
   box-shadow: none;
-
-  h2 {
-    color:red;
-  }
 
   .box .csc-header {
     .gp_gradient(#a7a7a7, #666);

@@ -44,6 +44,7 @@ menu.defaults {
     ACT < .NO
     ACT {
 ###      ATagParams = class="active"
+      wrapItemAndSub = <li class="active-unfolded">|</li>
     }
 
     # Copy properties of normal to current state, and then add a CSS class for styling
@@ -56,7 +57,7 @@ menu.defaults {
 
     CURIFSUB < .IFSUB
     CURIFSUB {
-      ATagParams = class="selected"
+      wrapItemAndSub = <li class="active-unfolded">|</li>
     }
   }
   2 < .1
