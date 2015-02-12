@@ -6567,6 +6567,10 @@ h4 {
   font-size: 1.1em;
   font-weight: bold;
 }
+figure figcaption {
+  font-size: .85em;
+  padding-top: .5em;
+}
 ul.gp {
   padding-left: 0px;
 }
@@ -6767,6 +6771,9 @@ old:
 .left-col nav.navbar.navbar-default ul.nav li:hover > a {
   background-color: red;
 }
+.left-col .panel.panel-default h4.csc-firstHeader {
+  background-color: white;
+}
 .mid-col .options {
   margin-bottom: 30px;
 }
@@ -6782,6 +6789,16 @@ old:
 .mid-col .options #to-top i,
 .mid-col .options #print i {
   color: #555555;
+}
+.mid-col div.csc-textpic-center-outer {
+  float: none;
+  position: inherit;
+  right: auto;
+}
+.mid-col div.csc-textpic-center-outer .csc-textpic-center-inner {
+  float: none;
+  position: inherit;
+  right: auto;
 }
 .right-col .csc-header {
   background: -moz-linear-gradient(center top, #a7a7a7 0%, #666666 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -6821,9 +6838,20 @@ old:
   content: "\e075";
   margin-right: 3px;
 }
+.right-col .panel.panel-default {
+  padding-bottom: 1px;
+}
+.right-col .panel.panel-default h4 a {
+  color: white;
+}
 footer {
   background: -moz-linear-gradient(center top, #232323 0%, #414141 180px) !important;
-  padding: 50px 0px;
+  padding: 3em 0px;
+}
+@media (max-width: 768px) {
+  footer img {
+    margin-top: 2.3em;
+  }
 }
 footer .copyright {
   padding-top: 30px;
