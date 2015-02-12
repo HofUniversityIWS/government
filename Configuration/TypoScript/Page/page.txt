@@ -31,46 +31,10 @@ page {
 
   }
 
-  # Add a TEMPLATE object to the page
-  # We use the template autoparser extension to easily replace parts of the HTML template by dynamic TypoScript objects
-/*
-  10 = TEMPLATE
+  # Add a FLUIDTEMPLATE object to the page
+  # We use a Fluid Template to easily replace parts of the HTML template by dynamic TypoScript objects
+  10 = FLUIDTEMPLATE
   10 {
-    # Use the HTML template from the automake template plugin
-    template =< plugin.tx_automaketemplate_pi1
-
-    # Use the <body> subpart
-    workOnSubpart = DOCUMENT_BODY
-
-    # Link content and page blocks to id's that have been enabled in the
-    # automaketemplate template in the extension_configuration sysfolder
-    subparts {
-      # Insert menu's from lib-objects into the appropriate subparts
-      nav-top < menu.top
-      nav-help < menu.help
-      nav-main < menu.firstlevel
-      breadcrumb < menu.breadcrumb
-
-      #language < menu.language
-
-      # Insert various TypoScript lib objects into the appropriate subparts of the template
-      title < lib.title
-      logo < lib.logo
-      search < lib.searchbox
-      nav-footer < menu.footer
-      footer-logo < lib.footer-logo
-      copyright < lib.copyright
-
-      # Insert content as already constructed in TypoScript objects into subparts
-      content-left-output < lib.contentleft
-      content-column < lib.content
-      content-right < lib.contentright
-
-    }
-  }
-*/  
-  15 = FLUIDTEMPLATE
-  15 {
   	file = EXT:government/Resources/Private/Templates/Index.html
   	
   	variables {

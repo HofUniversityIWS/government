@@ -1,10 +1,3 @@
-### Configuration/TypoScript plugin.automaketemplate ###
-The AUTOMAKETEMPLATE template
-
-The automaketemplate parser reads the HTML template files, extracts the markers for content, and replaces them with the content assigned to these markers.
-
-
-
 ### Configuration/TypoScript plugin.felogin ###
 
 The FELOGIN template

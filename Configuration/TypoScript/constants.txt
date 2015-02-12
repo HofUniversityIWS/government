@@ -60,11 +60,6 @@ menu {
     help.pages = 238
 }
 
-plugin.tx_automaketemplate_pi1 {
-    # cat=government package/180/100; type:string; label= Auto make Template - HTML template file: Name of the HTML page template file (without path, see constant for filepaths.templates)
-    templatefile = index.html
-}
-
 plugin.tx_indexedsearch {
     # cat=government package/170/100; type=int+; label= Indexed Search - Search Page ID: UID of the page which contains the indexed search plugin.
     searchpageID = 241
