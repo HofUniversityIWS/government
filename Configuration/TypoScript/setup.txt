@@ -22,7 +22,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.felogin.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.indexed_search.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/plugin.tx_news.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Extension/jquerycolorbox.txt">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Navigation/menu.defaults.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Navigation/menu.breadcrumb.txt">
