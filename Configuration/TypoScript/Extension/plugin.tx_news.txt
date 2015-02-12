@@ -9,4 +9,9 @@ plugin.tx_news {
 		partialRootPaths.200 = EXT:government/Resources/Private/Overrides/News/Partials/
 		layoutRootPaths.200 = EXT:government/Resources/Private/Overrides/News/Layouts/
 	}
+
+	_LOCAL_LANG {
+		de.dateFormat = %d.%m.%Y %H:%M
+		default.dateFormat = %d.%m.%Y %H:%M
+	}
 }

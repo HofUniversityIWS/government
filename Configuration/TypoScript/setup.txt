@@ -1,6 +1,5 @@
 # Include static Templates
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/setup.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jquerycolorbox/static/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:news/Configuration/TypoScript/setup.txt">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/settings/setup.txt">
 #<INCLUDE_TYPOSCRIPT: source="FILE:EXT:wt_spamshield/static/defaultmailform/setup.txt">
@@ -9,6 +8,10 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:contrast/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:form/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:a21glossary/Configuration/TypoScript/Accessibility/setup.txt">
+
+# Include at first JSFooter
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.includeJSFooter.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3colorbox/Configuration/TypoScript/setup.txt">
 
 # Include custom Templates
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Content/tt_content.mailform.txt">
@@ -51,6 +54,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.meta.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.headerData.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.includeJS.txt">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.includeJSFooter.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/page.includeCSS.txt">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:government/Configuration/TypoScript/Page/reader.txt">
