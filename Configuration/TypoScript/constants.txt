@@ -48,7 +48,7 @@ filepaths {
     l10n = fileadmin/default/templates/l10n/de.locallang.xlf
 }
 
-contrast.stylesheet = fileadmin/default/templates/css/contrast.css
+contrast.stylesheet = EXT:government/Resources/Public/Css/contrast.css
 
 # hasPageId:menu.
 menu {

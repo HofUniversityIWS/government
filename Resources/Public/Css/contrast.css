@@ -1,0 +1,65 @@
+span.contrast-link a, span.contrast-link a:hover { color: black; font-weight:bold;}
+
+body, button, input, select, textarea { color: #000; }
+
+/* ==|== primary styles =====================================================
+   Author: Lars Zimmermann
+   ========================================================================== */
+
+body, h1, h2, h3, p { color: black!important; }
+
+a { color: #084889; text-decoration:underline !important; }
+a:hover { text-decoration:underline; }
+
+
+.left-col .navbar-default ul.gp a{
+	color: black!important;
+}
+#content-left nav ul li a {
+	color:black;
+}
+
+#nav-footer ul li a,
+footer #copyright a {
+	color: white;
+}
+
+.breadcrumb > .active {
+	color: #777777;
+}
+
+.news-latest-container,
+.box {
+	background:#fafafa;
+}
+
+#content-left nav ul li a.selected,
+#content-left nav ul li.subpages a:hover{
+	background-color:#f9f9f9;
+}
+
+header nav ul li a:hover {
+    color: #084889;
+	text-decoration:underline;
+}
+
+.box h4, .contenttable caption .csc-header .csc-header-n1{
+	padding: 0;
+}
+
+.box h4, .contenttable caption {
+	margin: 0;
+	padding: 0.5em 0.95em;
+		background: #545454; /* Old browsers */
+	background: -moz-linear-gradient(top,  #545454 0%, #232323 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#545454), color-stop(100%,#232323)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #545454 0%,#232323 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #545454 0%,#232323 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #545454 0%,#232323 100%); /* IE10+ */
+	background: linear-gradient(top,  #545454 0%,#232323 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#545454', endColorstr='#232323',GradientType=0 ); /* IE6-9 */
+}
+
+div.csc-mailform li label {
+	color:black;
+}
