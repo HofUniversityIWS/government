@@ -6742,7 +6742,18 @@ ul.nav li.active-unfolded > a:before {
   display: inline;
 }
 .row.top .text-right form input {
-  height: 1.6em;
+  background-color: #ebebeb;
+  background: -webkit-linear-gradient(top, #ebebeb 0%, #ffffff 100%);
+  background: webkit-gradient(top, #ebebeb 0%, #ffffff 100%);
+  background: -moz-linear-gradient(center top, #ebebeb 0%, #ffffff 100%);
+  background: o-linear-gradient(top, #ebebeb 0%, #ffffff 100%);
+  background: ms-linear-gradient(top, #ebebeb 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from', endColorstr='@to', GradientType=0);
+  border: 0.063em solid #b6b6b6;
+  color: #333;
+  font-size: 0.625em;
+  width: 16em;
+  height: 2.7em;
 }
 .row.top button {
   background: none;
@@ -6885,30 +6896,10 @@ old:
 }
 .left-col .panel.panel-default .news {
   padding: 15px;
+  padding-top: 0px;
 }
-.mid-col {
-  /*
-  .box.download {
-    background-color: red;
-    text-transform: uppercase;
-    ul.csc-uploads {
-
-      li.csc-uploads-element {
-        &:before {
-          content:"";
-        }
-         &.csc-uploads-element-pdf {
-           background-image: url("../Images/acrobat.png") !important;
-
-           background-position: 0 0.15em;
-           background-repeat: no-repeat;
-           margin: 0.7em;
-           padding: 0 0 0 2em;
-
-         }
-      }
-    }
-  }*/
+.left-col .panel.panel-default .news .teaser-text {
+  margin-bottom: 1.5em;
 }
 .mid-col h1 {
   font-size: 2em;
