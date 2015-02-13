@@ -50,18 +50,15 @@ class ImportHook implements SingletonInterface {
 
 		$templateIds = $importExport->import_mapId['sys_template'];
 		$this->handlePageIds($importExport->import_mapId['pages']);
-		$firstPageId = current($this->pageIds);
 
 		foreach ($templateIds as $templateId) {
 			$template = BackendUtility::getRecord('sys_template', $templateId);
-			if ((int)$template['pid'] === $firstPageId) {
-				$constantData = $this->getTemplateConstantData($template);
-				if ($constantData === NULL) {
-					continue;
-				}
-				$this->processTemplateData($constantData);
-				$this->updateTemplate($template);
+			$constantData = $this->getTemplateConstantData($template);
+			if ($constantData === NULL) {
+				continue;
 			}
+			$this->processTemplateData($constantData);
+			$this->updateTemplate($template);
 		}
 	}
 
