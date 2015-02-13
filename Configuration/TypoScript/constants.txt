@@ -42,7 +42,7 @@ filepaths {
     scripts = EXT:government/Resources/Public/JavaScript/
 
     # cat=government package/130/140; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
-    extensiontemplates = fileadmin/default/templates/extensions/
+    extensiontemplates = EXT:government/Resources/Private/Overrides
 
     # cat=government package/130/150; type=string; label=Localization path: Path for localizations of custom TypoScript labels
     l10n = EXT:government/Resources/Private/Languages/de.locallang.xlf
