@@ -5,7 +5,7 @@ page.includeCSS {
     #20 = {$filepaths.css}print.css
     #20.media = print
     
-    30 = EXT:government/Resources/Public/Css/main.css
+    30 = {$filepaths.css}main.css
     30.media = screen,projection
 }
 

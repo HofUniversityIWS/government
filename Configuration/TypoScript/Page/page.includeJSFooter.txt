@@ -1,4 +1,4 @@
 page.includeJSFooterlibs {
-    main = EXT:government/Resources/Public/JavaScript/main.min.js
+    main = {$filepaths.scripts}main.min.js
     main.forceOnTop = 1
 }

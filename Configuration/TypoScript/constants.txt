@@ -33,13 +33,13 @@ filepaths {
     templates = fileadmin/default/templates/
 
     # cat=government package/130/110; type=string; label=CSS: Location of the Cascading Style Sheets relative to site
-    css = fileadmin/default/templates/css/
+    css = EXT:government/Resources/Public/Css/
 
     # cat=government package/130/120; type=string; label=Images: Location of the images relative to site
     images = fileadmin/default/templates/images/
 
     # cat=government package/130/130; type=string; label=Scripts: Location of the Javascript files relative to site
-    scripts = fileadmin/default/templates/scripts/
+    scripts = EXT:government/Resources/Public/JavaScript/
 
     # cat=government package/130/140; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
     extensiontemplates = fileadmin/default/templates/extensions/
