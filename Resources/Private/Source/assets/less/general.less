@@ -174,3 +174,37 @@ ul.nav  {
     border:none;
   }
 }
+
+ul.csc-uploads {
+
+  li.csc-uploads-element {
+    &:before {
+      content:"";
+    }
+    background-position: 0 0.15em;
+    background-repeat: no-repeat;
+    margin: 0.7em;
+    padding: 0 0 0 2em;
+    &.csc-uploads-element-pdf {
+      background-image: url("../Icons/acrobat.png");
+    }
+    &.csc-uploads-element-jpg {
+      background-image: url("../Icons/image.png");
+    }
+  }
+}
+li {
+  list-style-type: none;
+  .news-related-files-link {
+    a.download-link {
+      background-position: 0 0.15em;
+      background-repeat: no-repeat;
+      margin: 0.7em;
+      padding: 0 0 1em 2em;
+      &.pdf {
+        background-image: url("../Icons/acrobat.png");
+      }
+
+    }
+  }
+}
