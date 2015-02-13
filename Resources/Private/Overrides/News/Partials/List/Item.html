@@ -48,7 +48,7 @@
 						<n:link newsItem="{newsItem}" settings="{settings}">
 							<f:alias map="{mediaElement: newsItem.falMediaPreviews.0}">
 								<f:if condition="{mediaElement.originalResource.type} == 2">
-									<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.media.maxWidth}" maxHeight="{settings.media.maxHeight}" />
+									<f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
 								</f:if>
 								<f:if condition="{mediaElement.originalResource.type} == 4">
 									<f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement}" />
@@ -60,7 +60,7 @@
 						<f:if condition="{settings.displayDummyIfNoMedia}">
 							<span class="no-media-element">
 								<n:link newsItem="{newsItem}" settings="{settings}">
-									<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.media.maxWidth}" maxHeight="{settings.media.maxHeight}" />
+									<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
 								</n:link>
 							</span>
 						</f:if>
@@ -79,7 +79,7 @@
 								<n:link newsItem="{newsItem}" settings="{settings}">
 									<f:alias map="{mediaElement: newsItem.mediaPreviews.0}">
 										<f:if condition="{mediaElement.type} == 0">
-											<f:image src="uploads/tx_news/{mediaElement.image}" title="{mediaElement.title}" alt="{mediaElement.alt}" maxWidth="{settings.media.maxWidth}" maxHeight="{settings.media.maxHeight}" />
+											<f:image src="uploads/tx_news/{mediaElement.image}" title="{mediaElement.title}" alt="{mediaElement.alt}" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
 										</f:if>
 										<f:if condition="{mediaElement.type} == 1">
 											<f:render partial="Detail/MediaVideo" arguments="{mediaElement: mediaElement}" />
@@ -94,7 +94,7 @@
 								<f:if condition="{settings.displayDummyIfNoMedia}">
 							<span class="no-media-element">
 								<n:link newsItem="{newsItem}" settings="{settings}">
-									<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.media.maxWidth}" maxHeight="{settings.media.maxHeight}" />
+									<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
 								</n:link>
 							</span>
 								</f:if>
@@ -109,7 +109,7 @@
 							<div class="news-img-wrap">
 								<n:link newsItem="{newsItem}" settings="{settings}">
 							<span class="no-media-element">
-								<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.media.maxWidth}" maxHeight="{settings.media.maxHeight}" />
+								<f:image src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
 							</span>
 								</n:link>
 							</div>

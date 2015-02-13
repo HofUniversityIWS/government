@@ -7209,6 +7209,7 @@ old:
   color: #888888;
   content: "\e075";
   margin-right: 3px;
+  top: 0;
 }
 .right-col .panel.panel-default {
   padding-bottom: 1px;

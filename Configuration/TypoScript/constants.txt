@@ -42,13 +42,13 @@ filepaths {
     scripts = EXT:government/Resources/Public/JavaScript/
 
     # cat=government package/130/140; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
-    extensiontemplates = fileadmin/default/templates/extensions/
+    extensiontemplates = EXT:government/Resources/Private/Overrides/
 
     # cat=government package/130/150; type=string; label=Localization path: Path for localizations of custom TypoScript labels
-    l10n = fileadmin/default/templates/l10n/de.locallang.xlf
+    l10n = EXT:government/Resources/Private/Languages/de.locallang.xlf
 }
 
-contrast.stylesheet = fileadmin/default/templates/css/contrast.css
+contrast.stylesheet = EXT:government/Resources/Public/Css/contrast.css
 
 # hasPageId:menu.
 menu {
@@ -181,5 +181,5 @@ contentpage {
 # Set the language of meta tag with DC.language to Danish, when in Danish
 [globalVar = GP:L = 1]
     page.meta.language = en
-    filepaths.l10n = fileadmin/default/templates/l10n/locallang.xlf
+    filepaths.l10n = EXT:government/Resources/Private/Languages/locallang.xlf
 [global]
