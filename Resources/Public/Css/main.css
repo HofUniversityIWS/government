@@ -6535,14 +6535,6 @@ html {
   font-size: .85em;
   font-family: Verdana, Geneva, sans-serif;
 }
-/*Headlines*/
-h1,
-h2,
-h3,
-h4,
-p {
-  line-height: 1.8em;
-}
 a:focus {
   outline: medium dotted;
 }
@@ -6565,14 +6557,22 @@ a:focus {
   padding: 0px;
   overflow: hidden;
 }
+/*Headlines*/
+h1,
+h2,
+h3,
+h4,
+p {
+  line-height: 1.5em;
+}
 h1 {
   font-size: 1.7em;
   font-weight: bold;
   margin-bottom: .8em;
 }
 h2 {
-  color: #1e5799;
-  font-size: 1.2em;
+  color: #555555;
+  font-size: 1em;
   font-weight: bold;
 }
 h3,
@@ -6592,6 +6592,20 @@ img {
 figure figcaption {
   font-size: .85em;
   padding-top: .5em;
+}
+.sr-hint a {
+  position: absolute !important;
+  top: auto;
+  left: auto;
+  display: block !important;
+  width: 20em;
+  line-height: 5em;
+  text-align: center;
+  border: 0.5em double #000;
+  padding: 0.5em;
+  background-color: #ffffff;
+  z-index: 3000;
+  font-size: 1.25em;
 }
 .left-col .navbar-default ul.gp {
   font-size: 0.95em;
@@ -6732,16 +6746,16 @@ ul.csc-uploads li.csc-uploads-element.csc-uploads-element-pdf {
 ul.csc-uploads li.csc-uploads-element.csc-uploads-element-jpg {
   background-image: url("../Icons/image.png");
 }
-li {
+.news-related.news-related-files li {
   list-style-type: none;
 }
-li .news-related-files-link a.download-link {
+.news-related.news-related-files li .news-related-files-link a.download-link {
   background-position: 0 0.15em;
   background-repeat: no-repeat;
   margin: 0.7em;
   padding: 0 0 1em 2em;
 }
-li .news-related-files-link a.download-link.pdf {
+.news-related.news-related-files li .news-related-files-link a.download-link.pdf {
   background-image: url("../Icons/acrobat.png");
 }
 @media (min-width: 768px) {
@@ -6779,11 +6793,11 @@ li .news-related-files-link a.download-link.pdf {
   background: o-linear-gradient(top, #ebebeb 0%, #ffffff 100%);
   background: ms-linear-gradient(top, #ebebeb 0%, #ffffff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from', endColorstr='@to', GradientType=0);
-  border: 0.063em solid #b6b6b6;
+  border: 1px solid #b6b6b6;
   color: #333;
-  font-size: 0.625em;
-  width: 16em;
-  height: 2.7em;
+  font-size: 1em;
+  width: 9em;
+  height: 18px;
 }
 .row.top button {
   background: none;
@@ -6959,9 +6973,6 @@ old:
   float: none;
   position: inherit;
   right: auto;
-}
-.mid-col article h2 {
-  color: inherit;
 }
 .mid-col article .box.link-list {
   background-color: #eeeeee;
@@ -7233,6 +7244,9 @@ footer .copyright {
 footer .copyright a {
   color: #b1b1b1;
 }
+footer ul.gp {
+  list-style-type: none;
+}
 footer ul.gp li:before {
   position: relative;
   top: 1px;
@@ -7254,6 +7268,7 @@ footer ul.gp li a {
   line-height: 1.9em;
 }
 footer ul.gp li ul li {
+  list-style-type: none;
   padding-left: 0px;
   margin-left: 0px;
 }
@@ -7262,4 +7277,7 @@ footer ul.gp li ul li:before {
 }
 footer ul.gp li ul li a {
   font-weight: normal;
+}
+footer ul.gp li ul li ul {
+  list-style-type: none;
 }

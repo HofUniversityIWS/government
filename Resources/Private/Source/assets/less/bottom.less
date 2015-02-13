@@ -16,7 +16,7 @@ footer {
   }
 
   ul.gp {
-
+    list-style-type: none;
     li {
       &:before {
         .glyphicon_before();
@@ -31,6 +31,7 @@ footer {
 
 
       ul li {
+        list-style-type: none;
         padding-left:0px;
         margin-left:0px;
         &:before {
@@ -39,9 +40,8 @@ footer {
         a {
           font-weight: normal;
         }
-        ul li {
-          a {
-          }
+        ul {
+          list-style-type: none;
         }
       }
     }
