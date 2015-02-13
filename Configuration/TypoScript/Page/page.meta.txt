@@ -14,5 +14,5 @@ page.meta {
     revisit-after = {$page.meta.revisit} days
     viewport = {$page.meta.viewport}
     X-UA-Compatible = {$page.meta.X-UA-Compatible}
-
+    X-UA-Compatible.httpEquivalent = 1
 }
