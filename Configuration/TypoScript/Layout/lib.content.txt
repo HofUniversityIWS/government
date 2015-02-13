@@ -21,7 +21,7 @@ lib.content {
         10.wrap = <a class="to-top" href="#" id="to-top"><i class="glyphicon glyphicon-chevron-up"> </i> |</a>
         20 = TEXT
         20.value = <a class="print" href="Javascript:window.print();" id="print"><i class="glyphicon glyphicon-print"> </i> Drucken</a>
-        wrap = <div class="options">|</div>
+        wrap = <div class="options no-print">|</div>
     }
 
 
