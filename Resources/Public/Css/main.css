@@ -7230,3 +7230,33 @@ footer .copyright {
 footer .copyright a {
   color: #b1b1b1;
 }
+footer ul.gp li:before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: .7em;
+  color: #888888;
+  content: "\e250";
+  padding-right: 3px;
+}
+footer ul.gp li a {
+  color: #b1b1b1;
+  font-weight: bold;
+  line-height: 1.9em;
+}
+footer ul.gp li ul li {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+footer ul.gp li ul li:before {
+  content: "";
+}
+footer ul.gp li ul li a {
+  font-weight: normal;
+}

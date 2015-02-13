@@ -14,4 +14,36 @@ footer {
       color:#b1b1b1;
     }
   }
+
+  ul.gp {
+
+    li {
+      &:before {
+        .glyphicon_before();
+        content: "\e250";
+        padding-right:3px;
+      }
+      a {
+        color:#b1b1b1;
+        font-weight: bold;
+        line-height:1.9em;
+      }
+
+
+      ul li {
+        padding-left:0px;
+        margin-left:0px;
+        &:before {
+          content:"";
+        }
+        a {
+          font-weight: normal;
+        }
+        ul li {
+          a {
+          }
+        }
+      }
+    }
+  }
 }
