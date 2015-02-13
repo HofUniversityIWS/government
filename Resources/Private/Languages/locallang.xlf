@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2011-11-18T20:22:34Z" product-name="government">
+		<header/>
+		<body>
+			<trans-unit id="nav_top" xml:space="preserve">
+				<source>Top Navigation</source>
+			</trans-unit>
+			<trans-unit id="nav_help" xml:space="preserve">
+				<source>Help Navigation</source>
+			</trans-unit>
+			<trans-unit id="nav_breadcrumb" xml:space="preserve">
+				<source>You are here</source>
+			</trans-unit>
+			<trans-unit id="nav_main" xml:space="preserve">
+				<source>Main Navigation</source>
+			</trans-unit>
+			<trans-unit id="nav_footer" xml:space="preserve">
+				<source>Footer Navigation</source>
+			</trans-unit>
+			<trans-unit id="desc_search" xml:space="preserve">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="desc_content" xml:space="preserve">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="desc_context" xml:space="preserve">
+				<source>Context Column</source>
+			</trans-unit>
+			<trans-unit id="jump_navigation" xml:space="preserve">
+				<source>Go to Navigation</source>
+			</trans-unit>
+			<trans-unit id="jump_content" xml:space="preserve">
+				<source>Go to Content</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
