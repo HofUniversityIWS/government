@@ -6535,6 +6535,7 @@ html {
   font-size: .85em;
   font-family: Verdana, Geneva, sans-serif;
 }
+/*Headlines*/
 h1,
 h2,
 h3,
@@ -6874,8 +6875,14 @@ old:
 .left-col nav.navbar.navbar-default ul.nav > li:first-child {
   border-top: 1px solid #ddd;
 }
+.left-col .panel.panel-default {
+  background-color: #f7f7f7;
+}
 .left-col .panel.panel-default h4.csc-firstHeader {
   background-color: white;
+}
+.left-col .panel.panel-default .news {
+  padding: 15px;
 }
 .mid-col {
   /*
